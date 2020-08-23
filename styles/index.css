@@ -8,4 +8,5 @@
     font-size: 1.5rem;
     border-top: 1px dashed black;
     border-left: 1px dashed black;
+    border-top-left-radius: 0.5rem;
 }

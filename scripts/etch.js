@@ -59,7 +59,10 @@ function makeGrid(n) {
             return;
         } else if (n < 2) {
             return;
-        };
+        } else if (n > 100) {
+            alert('Value may not exceed 100.');
+            return;
+        }
         clearContainer();
         startGame(n);
     };

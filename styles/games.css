@@ -58,3 +58,13 @@ section.gutter {
     border: 1px dashed black;
     flex: 3;
 }
+
+main#game-view {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div#game-container {
+    margin: 2rem;
+}

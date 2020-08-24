@@ -7,16 +7,75 @@
 
   <title>Portfolio</title>
 
-  <meta name="description" content="description">
-  <meta name="author" content="author">
-
+  <meta name="description" content="Personal portfolio website for aspiring software engineer">
+  <meta name="author" content="ntc">
+  <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
   <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
 
+  
 </head>
 
 <body>
-<p id='contact-info'>Contact page <a href="https://gif007.github.io/contact.html">here</a></p>
-  <script src="scripts/main.js"></script>
+<!-- top of page heading -->
+<header>
+    <h1>Coding <span id='pipe'>|</span> Presentation</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="https://gif007.github.io" title='Home'>Home</a></li>
+        <li><a href='#' title='Website layouts'>Designs</a></li>
+        <li><a href='#' title='Games'>Games</a></li>
+        <li><a href='#' title='Get in touch'>Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <aside>
+        <section>
+            <h3>New project</h3>
+            <div>New version of <a href='#' title='RPS 2.0'>Rock, Paper, Scissors</a> now available</div>
+        </section>
+        <section>
+            <h3>Industry update</h3>
+            <div>Ebon Corporation launches new game engine, revolutionizing adventure genre</div>
+        </section>
+    </aside>
+
+    <article>
+        <section>
+            <div style='border: 1px dashed green; height: 148px; width: 498px; color: green'>Image go here</div>
+        </section>
+        <section>
+            <h3>Who am I</h3>
+            <p>This website is designed to further my long-term goal of becoming a software engineer by starting out as a full stack developer for a thriving and ambitious web development business.</p>
+        </section>
+
+        <section>
+            <h3>What I do</h3>
+            <p>By combining my skill and experience in HTML/CSS, Javascript and Python I am able to create a diverse range of web-related products and services that are fully customaizable and able to take advantage of the full flexibility and strength of each of the aforementioned technologies.</p>
+        </section>
+
+        <section>
+            <h3>Showcase</h3>
+            <p>A multi-screen version of the popular Rock, Paper, Scissors game is made possible through the passing of game state properties between different iterations of the game's user interface.</p>
+            <p>Using conditionals, a modern iteration of the classic Etch-a-Sketch game takes advantage of the ability to draw using either greyscale or rainbow gradiations.</p>
+        </section>
+
+        <section>
+            <h3>More about me</h3>
+            <p>Write well designed, testable and efficient code following software development best practices. Integrate data from various back-end services. Able to effectively solve problems and operate in a cross functional, team oriented IT environment. Keep current on the knowledge of hardware and software.</p>
+            <p>Analytical and problem solving skills. Quick learner, ability to work independently or as part of a team. Capable of self teaching. Time management, organizational and prioritization skills.</p>
+            <p>Written and oral communication skills. Adapt promptly to changing client needs. Respect for confidentiality.</p>
+        </section>
+    </article>
+</main>
+<footer>
+    <ul>
+        <li>BRANDLOGO</li>
+        <li>N. Thomas</li>
+        <li>&copy;2020</li>
+    </ul>
+</footer>
 </body>
 </html>

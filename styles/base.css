@@ -1,0 +1,120 @@
+/* Colors:
+   IndianRed rgb(205, 92, 92) #cd5c5c
+   FireBrick: rgb(178, 34, 34) #B22222
+   CornSilk: rgb(255, 248, 220) #FFF8DC
+*/
+
+
+/*********************************************************************
+ *********************************** PAGE ****************************
+ *********************************************************************/
+
+html {
+    font-size: 16px;
+    /*box-sizing: border-box;*/
+}
+
+/**, *:before, *:after {
+    box-sizing: inherit;
+}*/
+
+body {
+    background-color: rgb(255, 248, 220); /*CornSilk #FFF8DC*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*********************************************************************
+ ******************************** HEADING ****************************
+ *********************************************************************/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(255, 248, 220); /*CornSilk #FFF8DC*/
+    height: 5.25rem;
+    padding: 0 1rem;
+}
+
+header > h1 {
+    font-size: 3rem;
+}
+
+header > h1 > span#pipe {
+    color: rgb(178, 34, 34);
+}
+
+
+/*********************************************************************
+ ***************************** NAVIGATION ****************************
+ *********************************************************************/
+
+nav {
+    background-color: rgb(178, 34, 34); /*FireBrick #B22222*/
+}
+
+nav > ul {
+    display: flex;
+    align-items: stretch;
+    height: 2.25rem;
+}
+
+nav > ul > li {
+    display: flex;
+    align-items: stretch;
+    flex: 1;
+}
+
+nav > ul > li > a {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+nav > ul > li > a:link {
+    color: rgb(255, 248, 220); /*CornSilk #FFF8DC*/
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+    background-color: rgb(205, 92, 92); /*IndianRed #cd5c5c*/
+}
+
+nav > ul > li > a:visited {
+    color: rgb(255, 248, 220); /*CornSilk #FFF8DC*/
+    text-decoration: none;
+}
+
+
+/*********************************************************************
+ ********************************* FOOTER ****************************
+ *********************************************************************/
+
+footer {
+    background-color: rgb(178, 34, 34); /*FireBrick #B22222*/
+    width: 100%;
+}
+
+footer > ul {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    margin: 0 16px;
+}
+
+footer > ul > li {
+    color: rgb(255, 248, 220); /*CornSilk #FFF8DC*/
+    flex: 1;
+}
+
+footer > ul > li:nth-child(2) {
+    text-align: center;
+}
+
+footer > ul > li:last-child {
+    font-style: italic;
+    text-align: right;
+}

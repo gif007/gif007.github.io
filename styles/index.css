@@ -1,12 +1,99 @@
-#contact-info, #contact-form {
-    margin: 3rem;
-}    
+/* Colors:
+   IndianRed rgb(205, 92, 92) #cd5c5c
+   FireBrick: rgb(178, 34, 34) #B22222
+   CornSilk: rgb(255, 248, 220) #FFF8DC
+*/
 
-#contact-info {
-    display: inline-block;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    border-top: 1px dashed black;
-    border-left: 1px dashed black;
-    border-top-left-radius: 0.5rem;
+/*********************************************************************
+ ************************** INDEX CONTENT ****************************
+ *********************************************************************/
+
+main {
+    width: 100%;
+}
+
+article {
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article > section {
+    max-width: 36em;
+    margin-bottom: 2.25em;
+}
+
+article > section:last-child {
+    margin-bottom: 0;
+}
+
+article > section > h3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 2.25em;
+    font-size: 1.5em;
+}
+
+article > section > p {
+    font-size: ;
+    line-height: 1.5;
+}
+
+article > section > p + p {
+    margin-top: 1.5em;
+}
+
+article > section > h3 + p::first-letter {
+    font-size: 24px;
+    line-height: 0;
+}
+
+aside {
+    position: absolute;
+    left: 1em;
+    width: 15em;
+}
+
+aside > section {
+    margin: 15px 0;
+    text-align: center;
+}
+
+aside > section > h3 {
+    text-align: left;
+    border-bottom: 2px solid rgb(178, 34, 34); /*FireBrick #B22222*/
+    padding-bottom: 2px;
+    font-size: ;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+aside > section > div {
+    padding-left: 6px;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 0.875em;
+}
+
+@media screen and (max-width: 1160px) {
+    aside {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    aside {
+        display: none;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    p {
+        max-width: 15em;
+    }
 }

@@ -58,7 +58,7 @@ table {
 /* Document level styling */
 
 html {
-    font-size: 16px;
+    font-size: 14px;
     box-sizing: border-box;
 }
 
@@ -77,42 +77,58 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    background-color: white;
-    height: 5.25rem;
-    padding: 0 1rem;
+    justify-content: space-around;
+    height: 84px;
+}
+
+header > button#burger-btn {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    display: inline-block;
+    border: none;
+    background-color: inherit;
+    z-index: 1;
 }
 
 header > h1 {
-    font-size: 3rem;
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-header > h1 > span#sep {
-    color: rgb(178, 34, 34);
-    padding: 0 0.5rem;
+header > h1 > img {
+    position: absolute;
+    height: inherit;
+    width: inherit;
 }
 
 
 /* Navigation styling */
 
 nav {
+    display: none;
     background-color: rgb(178, 34, 34); /*FireBrick #B22222*/
 }
 
 nav > ul {
     display: flex;
-    align-items: stretch;
-    height: 2.25rem;
+    flex-flow: column;
+
 }
 
 nav > ul > li {
     display: flex;
-    align-items: stretch;
+    line-height: 2.5;
     flex: 1;
+    border-bottom: 1px solid white;
+    height: 2rem;
 }
 
 nav > ul > li > a {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -170,7 +186,7 @@ main.index {
 }
 
 article.index {
-    margin: 3em 0;
+    margin: 3em 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,15 +203,11 @@ article.index > section:last-child {
 }
 
 article.index > section > h3 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     line-height: 2.25em;
     font-size: 1.5em;
 }
 
 article.index > section > p {
-    font-size: ;
     line-height: 1.5;
 }
 
@@ -209,6 +221,7 @@ article.index > section > h3 + p::first-letter {
 }
 
 aside.index {
+    display: none;
     position: absolute;
     left: 1em;
     width: 15em;

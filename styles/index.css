@@ -4,15 +4,172 @@
    CornSilk: rgb(255, 248, 220) #FFF8DC
 */
 
-/*********************************************************************
- ************************** INDEX CONTENT ****************************
- *********************************************************************/
 
-main {
+/* Reset CSS DOCUMENT */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Document level styling */
+
+html {
+    font-size: 16px;
+    /*box-sizing: border-box;*/
+}
+
+/**, *:before, *:after {
+    box-sizing: inherit;
+}*/
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Top of page heading */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    height: 5.25rem;
+    padding: 0 1rem;
+}
+
+header > h1 {
+    font-size: 3rem;
+}
+
+header > h1 > span#sep {
+    color: rgb(178, 34, 34);
+    padding: 0 0.5rem;
+}
+
+
+/* Navigation styling */
+
+nav {
+    background-color: rgb(178, 34, 34); /*FireBrick #B22222*/
+}
+
+nav > ul {
+    display: flex;
+    align-items: stretch;
+    height: 2.25rem;
+}
+
+nav > ul > li {
+    display: flex;
+    align-items: stretch;
+    flex: 1;
+}
+
+nav > ul > li > a {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+nav > ul > li > a:link {
+    color: white;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+    background-color: rgb(205, 92, 92); /*IndianRed #cd5c5c*/
+}
+
+nav > ul > li > a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Footer styling */
+
+footer {
+    background-color: rgb(178, 34, 34); /*FireBrick #B22222*/
     width: 100%;
 }
 
-article {
+footer > ul {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    margin: 0 16px;
+}
+
+footer > ul > li {
+    color: white;
+    flex: 1;
+}
+
+footer > ul > li:nth-child(2) {
+    text-align: center;
+}
+
+footer > ul > li:last-child {
+    font-style: italic;
+    text-align: right;
+}
+
+
+/* Index page styling */
+
+main.index {
+    width: 100%;
+}
+
+article.index {
     margin: 3em 0;
     display: flex;
     flex-direction: column;
@@ -20,16 +177,16 @@ article {
     justify-content: space-between;
 }
 
-article > section {
+article.index > section {
     max-width: 36em;
     margin-bottom: 2.25em;
 }
 
-article > section:last-child {
+article.index > section:last-child {
     margin-bottom: 0;
 }
 
-article > section > h3 {
+article.index > section > h3 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -37,32 +194,32 @@ article > section > h3 {
     font-size: 1.5em;
 }
 
-article > section > p {
+article.index > section > p {
     font-size: ;
     line-height: 1.5;
 }
 
-article > section > p + p {
+article.index > section > p + p {
     margin-top: 1.5em;
 }
 
-article > section > h3 + p::first-letter {
+article.index > section > h3 + p::first-letter {
     font-size: 24px;
     line-height: 0;
 }
 
-aside {
+aside.index {
     position: absolute;
     left: 1em;
     width: 15em;
 }
 
-aside > section {
+aside.index > section {
     margin: 15px 0;
     text-align: center;
 }
 
-aside > section > h3 {
+aside.index > section > h3 {
     text-align: left;
     border-bottom: 2px solid rgb(178, 34, 34); /*FireBrick #B22222*/
     padding-bottom: 2px;
@@ -71,29 +228,114 @@ aside > section > h3 {
     margin-bottom: 8px;
 }
 
-aside > section > div {
+aside.index > section > div {
     padding-left: 6px;
     text-align: left;
     line-height: 1.5;
     font-size: 0.875em;
 }
 
-@media screen and (max-width: 1160px) {
-    aside {
-        display: none;
-    }
+/* Games list page styling */
+
+h2.games {
+    background-color: rgb(178, 34, 34);
+    color: rgb(255, 248, 220);
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0.5em;
+    font-size: 2.25em;
 }
 
-@media screen and (max-width: 600px) {
-    aside {
-        display: none;
-    }
+main.games {
+    display: flex;
+    width: 100%;
+}
 
-    body {
-        font-size: 14px;
-    }
+main.games > section.games-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 18;
+}
 
-    p {
-        max-width: 15em;
-    }
+main.games > section.games-list > article {
+    margin: 5px; 
+    width: 500px;
+    height: 400px;
+    margin: 1.5em 0;
+}
+
+main.games > section.games-list > article > figure > a > img { 
+    width: 500px;
+    height: 350px;
+}
+
+main.games > section.games-list > article > figure > figcaption { 
+    width: 500px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main.games > section.gutter {
+    border: 1px dashed black;
+    flex: 3;
+}
+
+
+/* Game view page styling */
+
+main.game-view {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main.game-view > section > article > div#game-container {
+    margin: 2rem;
+}
+
+
+/* Contact page styling */
+
+main.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3em 0;
+}
+
+main.contact-info > p {
+    max-width: 36em;
+    line-height: 1.5;
+}
+
+main.contact-info > form {
+    width: 36em;
+    margin-top: 1em;
+}
+
+main.contact-info > form > fieldset {
+    padding: 1em;
+    border: 1px solid black;
+}
+
+main.contact-info > form > fieldset > p:not(:first-of-type) {
+    margin-top: 0.5em;
+}
+
+main.contact-info > form > fieldset > p >  input {
+    margin-left: 1.5em;
+}
+
+main.contact-info > form > fieldset > textarea {
+    margin-top: 0.5em;
+    resize: none;
 }

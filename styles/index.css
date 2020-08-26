@@ -334,11 +334,11 @@ main.games > section.games-list > article > a {
 }
 
 main.games > section.games-list > article > a#rps-link { 
-    background-image: url("https://mossandocean.ca/images/rps/rps-thumb-small.jpg");
+    background-image: url("www.mossandocean.ca/images/rps/rps-thumb-small.jpg");
 }
 
 main.games > section.games-list > article > a#etch-link { 
-    background-image: url("https://mossandocean.ca/images/etch/etch-thumb-small.jpg");
+    background-image: url("www.mossandocean.ca/images/etch/etch-thumb-small.jpg");
 }
 
 main.games > section.games-list > article > span { 

@@ -364,6 +364,21 @@ main.game-view > section > article > div#game-container {
     margin: 2rem;
 }
 
+main.game-view > section > article#etch > p#error-msg {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    main.game-view > section > article#etch > div#game-container {
+        display: none;
+    }
+
+    main.game-view > section > article#etch > p#error-msg {
+        display: block;
+        margin: 2rem;
+    }
+}
+
 
 /* Contact page styling */
 

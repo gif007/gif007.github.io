@@ -346,11 +346,6 @@ main.games > section.games-list > article > figure > figcaption {
     justify-content: space-around;
 }
 
-main.games > section.gutter {
-    border: 1px dashed black;
-    flex: 3;
-}
-
 
 /* Game view page styling */
 
@@ -381,7 +376,7 @@ main.contact-info > p {
 }
 
 main.contact-info > form {
-    width: 36em;
+    max-width: 36em;
     margin-top: 1em;
 }
 

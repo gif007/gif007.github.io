@@ -129,21 +129,21 @@ function beginRoundScreen(props) {
 function popChoices(props) {
     // Populate the player choice options for the beginRoundScreen
     const rock = document.createElement('img');
-    rock.setAttribute('src', 'images/rps/assets/rock.jpg');
+    rock.setAttribute('src', 'images/rps/assets/rock-sm.jpg');
     rock.style.cursor = 'pointer';
     rock.onclick = function () {
         onChoose('rock', props);
     }
 
     const paper = document.createElement('img');
-    paper.setAttribute('src', 'images/rps/assets/paper.jpg');
+    paper.setAttribute('src', 'images/rps/assets/paper-sm.jpg');
     paper.onclick = function () {
         onChoose('paper', props);
     }
     paper.style.cursor = 'pointer';
 
     const scissors = document.createElement('img');
-    scissors.setAttribute('src', 'images/rps/assets/scissors.jpg');
+    scissors.setAttribute('src', 'images/rps/assets/scissors-sm.jpg');
     scissors.onclick = function () {
         onChoose('scissors', props);
     }
@@ -310,6 +310,6 @@ function displayOutcome(result) {
 //////////////////////////////////////////////////////////////////////////////
 
 const container = document.querySelector('div#game-container');
-container.setAttribute('style', 'width: 500px; height: 500px; border: 2px dashed black; display: flex; flex-direction: column; align-items: center; justify-content: space-around;');
+container.setAttribute('style', 'width: 300px; height: 300px; border: 2px solid black; display: flex; flex-direction: column; align-items: center; justify-content: space-around;');
 
 window.onload = startScreen;

@@ -296,6 +296,7 @@ aside.index > section > div {
     aside.index {
         display: block;
     }
+}
 
 
 /* Games list page styling */
@@ -311,10 +312,6 @@ h2.games {
     font-size: 2.25em;
 }
 
-main.games {
-    width: 100%;
-}
-
 main.games > section.games-list {
     display: flex;
     flex-direction: column;
@@ -322,26 +319,29 @@ main.games > section.games-list {
     justify-content: flex-start;
 }
 
-main.games > section.games-list > article {
-    margin: 5px; 
+main.games > section.games-list > article { 
     margin: 1.5em 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-main.games > section.games-list > article > figure > a { 
+main.games > section.games-list > article > a { 
     display: block;
     width: 300px;
     height: 300px;
 }
 
-main.games > section.games-list > article > figure > a#rps-link { 
+main.games > section.games-list > article > a#rps-link { 
     background-image: url("file:///home/bard/dropbox/work/websites/github%20pages/images/rps/rps-thumb-small.jpg");
 }
 
-main.games > section.games-list > article > figure > a#etch-link { 
+main.games > section.games-list > article > a#etch-link { 
     background-image: url("file:///home/bard/dropbox/work/websites/github%20pages/images/etch/etch-thumb-small.jpg");
 }
 
-main.games > section.games-list > article > figure > figcaption { 
+main.games > section.games-list > article > span { 
     width: 300px;
     height: 50px;
     background-color: red;

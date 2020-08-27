@@ -60,6 +60,7 @@ table {
 html {
     font-size: 14px;
     box-sizing: border-box;
+    height: 100%;
 }
 
 *, *:before, *:after {
@@ -69,6 +70,7 @@ html {
 body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
 }
 
 div#spacer {
@@ -431,6 +433,7 @@ main.contact-info {
 }
 
 main.contact-info > p {
+    margin: 0 1rem;
     max-width: 36em;
     line-height: 1.5;
 }

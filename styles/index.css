@@ -376,23 +376,23 @@ main.game-view > section > article > div#rps-game-container {
     justify-content: space-around;
 }
 
-main.game-view > section > article > div#rps-game-container > div#choices > div#rock{
+main.game-view > section > article > div#rps-game-container > div#choices > div#rock {
     width: 75px;
     height: 67px;
     background-image: url('../images/rps/assets/rock-sm.jpg');
     cursor: pointer;
 }
 
-main.game-view > section > article > div#rps-game-container > div#choices > div#paper{
+main.game-view > section > article > div#rps-game-container > div#choices > div#paper {
     width: 75px;
-    height: 67px;
+    height: 55px;
     background-image: url('../images/rps/assets/paper-sm.jpg');
     cursor: pointer;
 }
 
-main.game-view > section > article > div#rps-game-container > div#choices > div#paper{
+main.game-view > section > article > div#rps-game-container > div#choices > div#scissors {
     width: 75px;
-    height: 67px;
+    height: 75px;
     background-image: url('../images/rps/assets/scissors-sm.jpg');
     cursor: pointer;
 }

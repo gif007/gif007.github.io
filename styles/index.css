@@ -74,7 +74,7 @@ body {
 }
 
 div#spacer {
-    height: 1rem;
+    height: 2rem;
     background-color: rgb(178, 34, 34);
 }
 
@@ -116,7 +116,9 @@ header > h1 {
     justify-content: space-around;
 }
 
-header > h1 > img {
+header > h1 > div#logo {
+    background-image: url('../images/site/mossandocean-logo-original.jpg');
+    background-repeat: no-repeat;
     position: absolute;
     height: inherit;
     width: inherit;

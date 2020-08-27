@@ -128,31 +128,29 @@ function beginRoundScreen(props) {
 
 function popChoices(props) {
     // Populate the player choice options for the beginRoundScreen
-    const rock = document.createElement('img');
-    rock.setAttribute('src', 'images/rps/assets/rock-sm.jpg');
-    rock.style.cursor = 'pointer';
+    const rock = document.createElement('div');
+    rock.setAttribute('id', 'rock');
     rock.onclick = function () {
         onChoose('rock', props);
     }
 
-    const paper = document.createElement('img');
-    paper.setAttribute('src', 'images/rps/assets/paper-sm.jpg');
+    const paper = document.createElement('div');
+    paper.setAttribute('id', 'paper');
     paper.onclick = function () {
         onChoose('paper', props);
     }
-    paper.style.cursor = 'pointer';
 
-    const scissors = document.createElement('img');
-    scissors.setAttribute('src', 'images/rps/assets/scissors-sm.jpg');
+    const scissors = document.createElement('div');
+    scissors.setAttribute('id', 'scissors');
     scissors.onclick = function () {
         onChoose('scissors', props);
     }
-    scissors.style.cursor = 'pointer';
 
     let choices = [rock, paper, scissors];
 
     const div = document.createElement('div');
-    div.setAttribute('style', 'display: flex; justify-content: space-around; align-items: center;')
+    div.setAttribute('style', 'display: flex; justify-content: space-around; align-items: center;');
+    div.setAttribute('id', 'choices');
     choices.forEach(element => div.appendChild(element));
     container.appendChild(div);
 }

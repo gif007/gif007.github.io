@@ -94,7 +94,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 84px;
+    height: 100px;
 }
 
 header > button#burger-btn {

@@ -309,7 +309,6 @@ function displayOutcome(result) {
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 
-const container = document.querySelector('div#game-container');
-container.setAttribute('style', 'width: 300px; height: 300px; border: 2px solid black; display: flex; flex-direction: column; align-items: center; justify-content: space-around;');
+const container = document.querySelector('div#rps-game-container');
 
 window.onload = startScreen;

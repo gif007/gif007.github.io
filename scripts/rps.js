@@ -56,43 +56,44 @@ function startScreen() {
     elementSet.forEach(element => container.appendChild(element));
 
     nameInput.focus();
-}
 
 
-function createNameInput() {
-    // Create name input
-    const nameInput = document.createElement('input');
-    nameInput.setAttribute('type', 'text');
-    nameInput.setAttribute('maxlength', '20');
-    nameInput.setAttribute('id', 'player-name');
-    nameInput.setAttribute('placeholder', 'Your name...');
-    nameInput.addEventListener('keyup', enterInput);
+    function createNameInput() {
+        // Create name input
+        const nameInput = document.createElement('input');
+        nameInput.setAttribute('type', 'text');
+        nameInput.setAttribute('maxlength', '20');
+        nameInput.setAttribute('id', 'player-name');
+        nameInput.setAttribute('placeholder', 'Your name...');
+        nameInput.addEventListener('keyup', enterInput);
 
-    function enterInput(e) {
-        // called if enter key is pressed while input is focused
-        if (e.code === 'Enter') {
+
+        function enterInput(e) {
+            // called if enter key is pressed while input is focused
+            if (e.code === 'Enter') {
+                let props = {playerName: nameInput.value};
+                beginRoundScreen(props);
+            }
+        }
+
+        return nameInput;
+    }
+
+
+    function createStartButton(nameInput) {
+        // Create a start game button
+        const startButton = document.createElement('button');
+        startButton.textContent = 'Begin';
+        startButton.style.display = 'block';
+        startButton.setAttribute('class', 'btn btn-info');
+
+        startButton.onclick = function () {
             let props = {playerName: nameInput.value};
             beginRoundScreen(props);
         }
-    }
-
-    return nameInput;
-}
-
-
-function createStartButton(nameInput) {
-    // Create a start game button
-    const startButton = document.createElement('button');
-    startButton.textContent = 'Begin';
-    startButton.style.display = 'block';
-    startButton.setAttribute('class', 'btn btn-info');
-
-    startButton.onclick = function () {
-        let props = {playerName: nameInput.value};
-        beginRoundScreen(props);
-    }
 
     return startButton;
+    }
 }
 
 
@@ -123,47 +124,46 @@ function beginRoundScreen(props) {
     }
 
     popChoices(props);
-}
 
+    function popChoices(props) {
+        // Populate the player choice options for the beginRoundScreen
+        const rock = document.createElement('div');
+        rock.setAttribute('id', 'rock');
+        rock.onclick = function () {
+            onChoose('rock', props);
+        }
 
-function popChoices(props) {
-    // Populate the player choice options for the beginRoundScreen
-    const rock = document.createElement('div');
-    rock.setAttribute('id', 'rock');
-    rock.onclick = function () {
-        onChoose('rock', props);
-    }
+        const paper = document.createElement('div');
+        paper.setAttribute('id', 'paper');
+        paper.onclick = function () {
+            onChoose('paper', props);
+        }
 
-    const paper = document.createElement('div');
-    paper.setAttribute('id', 'paper');
-    paper.onclick = function () {
-        onChoose('paper', props);
-    }
-
-    const scissors = document.createElement('div');
-    scissors.setAttribute('id', 'scissors');
-    scissors.onclick = function () {
+        const scissors = document.createElement('div');
+        scissors.setAttribute('id', 'scissors');
+        scissors.onclick = function () {
         onChoose('scissors', props);
+        }
+
+        let choices = [rock, paper, scissors];
+
+        const div = document.createElement('div');
+        div.setAttribute('style', 'display: flex; justify-content: space-around; align-items: center;');
+        div.setAttribute('id', 'choices');
+        choices.forEach(element => div.appendChild(element));
+        container.appendChild(div);
+
+
+        function onChoose(playerChoice, props) {
+            // Re-render screen when player selects a choice
+            let compChoice = computerPlay();
+            let res = determineWinner(playerChoice, compChoice);
+            props.computerChoice = compChoice;
+            props.playerChoice = playerChoice;
+            props.result = res;
+            endOfRound(props);
+            }
     }
-
-    let choices = [rock, paper, scissors];
-
-    const div = document.createElement('div');
-    div.setAttribute('style', 'display: flex; justify-content: space-around; align-items: center;');
-    div.setAttribute('id', 'choices');
-    choices.forEach(element => div.appendChild(element));
-    container.appendChild(div);
-}
-
-
-function onChoose(playerChoice, props) {
-    // Re-render screen when player selects a choice
-    let compChoice = computerPlay();
-    let res = determineWinner(playerChoice, compChoice);
-    props.computerChoice = compChoice;
-    props.playerChoice = playerChoice;
-    props.result = res;
-    endOfRound(props);
 }
 
 
@@ -202,45 +202,45 @@ function endOfRound(props) {
     const buttonFrame = makeButtonFrame(props);
 
     container.appendChild(buttonFrame);
-}
 
 
-function makeButtonFrame(props) {
-    // Create end of round button group
-    const replayButton = document.createElement('button');
-    replayButton.setAttribute('class', 'my-2 btn btn-info');
-    replayButton.textContent = 'Play again';
+    function makeHeaders(props, outcome){
+        // Create end of round headers
+        const header1 = document.createElement('h4');
+        header1.textContent = props.playerName + ' has chosen ' + props.playerChoice;
 
-    replayButton.onclick = function () {
-        beginRoundScreen(props);
+        const header2 = document.createElement('h4');
+        header2.textContent = 'Computer has chosen ' + props.computerChoice;
+
+        const header3 = document.createElement('h1');
+        header3.textContent = props.playerName + ' has ' + outcome;
+
+        return [header1, header2, header3];
     }
 
-    const renameButton = document.createElement('button');
-    renameButton.setAttribute('class', 'my-2 btn btn-info');
-    renameButton.textContent = 'Choose new name';
-    renameButton.onclick = startScreen;
 
-    const buttonFrame = document.createElement('div');
-    buttonFrame.setAttribute('style', 'display: flex; justify-content: space-around; align-items: center; width: 100%;');
-    buttonFrame.appendChild(replayButton);
-    buttonFrame.appendChild(renameButton);
+    function makeButtonFrame(props) {
+        // Create end of round button group
+        const replayButton = document.createElement('button');
+        replayButton.setAttribute('class', 'my-2 btn btn-info');
+        replayButton.textContent = 'Play again';
 
-    return buttonFrame;
-}
+        replayButton.onclick = function () {
+            beginRoundScreen(props);
+        }
 
+        const renameButton = document.createElement('button');
+        renameButton.setAttribute('class', 'my-2 btn btn-info');
+        renameButton.textContent = 'Choose new name';
+        renameButton.onclick = startScreen;
 
-function makeHeaders(props, outcome){
-    // Create end of round headers
-    const header1 = document.createElement('h4');
-    header1.textContent = props.playerName + ' has chosen ' + props.playerChoice;
+        const buttonFrame = document.createElement('div');
+        buttonFrame.setAttribute('style', 'display: flex; justify-content: space-around; align-items: center; width: 100%;');
+        buttonFrame.appendChild(replayButton);
+        buttonFrame.appendChild(renameButton);
 
-    const header2 = document.createElement('h4');
-    header2.textContent = 'Computer has chosen ' + props.computerChoice;
-
-    const header3 = document.createElement('h1');
-    header3.textContent = props.playerName + ' has ' + outcome;
-
-    return [header1, header2, header3];
+        return buttonFrame;
+    }
 }
 
 

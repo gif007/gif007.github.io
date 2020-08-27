@@ -408,6 +408,24 @@ main.game-view > section > article#etch > p#error-msg {
         width: 500px;
         height: 500px;
     }
+
+    main.game-view > section > article > div#rps-game-container > div#choices > div#rock {
+    width: 125px;
+    height: 111px;
+    background-image: url('../images/rps/assets/rock-lg.jpg');
+    }
+
+    main.game-view > section > article > div#rps-game-container > div#choices > div#paper {
+    width: 125px;
+    height: 92px;
+    background-image: url('../images/rps/assets/paper-lg.jpg');
+    }
+
+    main.game-view > section > article > div#rps-game-container > div#choices > div#scissors {
+    width: 125px;
+    height: 125px;
+    background-image: url('../images/rps/assets/scissors-lg.jpg');
+    }
 }
 
 @media screen and (max-width: 1023px) {

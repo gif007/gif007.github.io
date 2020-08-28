@@ -344,6 +344,13 @@ main.game-view {
     justify-content: space-around;
 }
 
+main.game-view > h2.main-heading {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    margin: 2.25rem auto;
+}
+
 main.game-view > section > article > div#game-container {
     margin: 2rem;
 }

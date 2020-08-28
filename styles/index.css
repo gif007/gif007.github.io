@@ -285,40 +285,6 @@ article.index > section > h3 + p::first-letter {
     line-height: 0;
 }
 
-aside.index {
-    display: none;
-    position: absolute;
-    left: 1rem;
-    width: 15rem;
-}
-
-aside.index > section {
-    margin: 15px 0;
-    text-align: center;
-}
-
-aside.index > section > h3 {
-    text-align: left;
-    border-bottom: 2px solid rgb(178, 34, 34); /*FireBrick #B22222*/
-    padding-bottom: 2px;
-    font-size: ;
-    font-style: italic;
-    margin-bottom: 8px;
-}
-
-aside.index > section > div {
-    padding-left: 6px;
-    text-align: left;
-    line-height: 1.5;
-    font-size: 0.875rem;
-}
-
-@media screen and (min-width: 1197px) {
-    aside.index {
-        display: block;
-    }
-}
-
 
 /* Games list page styling */
 

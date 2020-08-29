@@ -338,17 +338,17 @@ main.games > section.games-list > article > span {
 
 /* Game view page styling */
 
-main.game-view {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
 main.game-view > h2.main-heading {
     display: block;
     text-align: center;
     font-size: 3rem;
     margin: 2.25rem auto;
+}
+
+main.game-view > section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 main.game-view > section > article > div#game-container {

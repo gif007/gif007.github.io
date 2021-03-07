@@ -1,58 +1,19 @@
-<!DOCTYPE html>
+---
+layout: base
+title: Contact
+---
 
-<html lang="en">
-<head>
-  <title>Moss and Ocean - Contact us</title>
+<h1>Contact</h1>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact form page for Moss + Ocean.">
-
-  <link rel="shortcut icon" type="image/png" href="images/site/fav.ico"/>
-  <link rel="stylesheet" href="styles/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src='scripts/collapsenav.js'></script>
-
-</head>
-
-<body>
-
-<header>
-    <button id='burger-btn'><img src='images/site/burger.jpg' alt='burger menu' /></button>
-    <h1><div id='logo'></div>Moss and Ocean Website Design</h1>
-</header>
-
-<div id='spacer'></div>
-
-<nav id='nav'>
-    <ul>
-        <li><a href="http://www.mossandocean.ca" title='Home'>Home</a></li>
-        <li><a href='#' title='Website layouts'>Designs</a></li>
-        <li><a href='http://www.mossandocean.ca/games.html' title='Games'>Games</a></li>
-        <li><a href='http://www.mossandocean.ca/contact.html' title='Get in touch'>Contact</a></li>
-    </ul>
-</nav>
-
-<main class='contact-info'>
-    <form method='post'>
+<article role="article">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <form role="form">
         <fieldset>
-            <legend>Contact</legend>
-            <p><label for='name'>Name:</label><input type='text' id='name' name='name'></p>
-            <p><label for='email'>Email:</label><input type='email' id='email' name='email'></p>
-            <p><label for='message'>Message:</label></p>
-            <textarea rows='10' cols='40' maxlength='500' wrap='hard' id='message' name='message'></textarea>
-            <p><button type='submit'>Submit</button></p>
+            <legend>Form</legend>
+            <label for="name">Your name:</label>
+            <input name="name" id="name" type="text" aria-required="true" />
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="email" aria-required="true" />
         </fieldset>
     </form>
-</main>
-
-<footer>
-    <ul>
-        <li><img src='images/site/fav.ico' alt='' /></li>
-        <li>&copy;2020-2021 Moss and Ocean</li>
-    </ul>
-</footer>
-
-</body>
-</html>
+</article>

@@ -1,0 +1,180 @@
+/* Reset CSS DOCUMENT */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Base Styles */
+
+html, body {
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+	color: #0C3C26;
+	line-height: 1.25;
+}
+
+*:after, *:before, * {
+	box-sizing: inherit;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem;
+	background-color: #0C4B33;
+	position: sticky;
+	top: 0;
+}
+
+a.Logo {
+	margin-left: 1.5rem;
+	text-decoration: none;
+	font-size: 0.8rem;
+}
+
+nav {
+	width: 550px;
+}
+
+ul.NavList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+	
+}
+
+ul.NavList > li > a {
+	text-decoration: none;
+	font-weight: 700;
+	color: white;
+	font-size: 0.8rem;
+	line-height: 1;
+}
+
+ul.NavList > li > a:hover {
+	color: #C9F0DD;
+}
+
+ul.NavList > li > a.Active {
+	border-bottom: 2px solid #44B78B;
+}
+
+main { 
+	display: flex;
+	padding: 5rem;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 2.25rem;
+	letter-spacing: -1px;
+	line-height: 1.5;
+	width: 600px;
+}
+
+h2 {
+	font-weight: 700;
+	letter-spacing: -1px;
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-weight: 400;
+	letter-spacing: -1px;
+	font-style: italic;
+	color: #44B78B;
+}
+
+footer {
+	padding: 2rem;
+	background-color: #0C4B33;
+	height: 250px;
+}
+
+
+/* Style Index */
+
+article {
+	width: 600px;
+	margin-top: 2rem;
+}
+
+article + article {
+	margin-top: 5rem;
+}
+
+p {
+	margin-top: 1rem;
+}
+
+div.colorsplash {
+	width: 250px;
+	height: 250px;
+	background-color: #44B78B;
+	margin-top: 1rem;
+}
+
+img.ProjectImage {
+	float: left;
+	margin-right: 1rem;
+	width: 75px;
+	height: 75px;
+}

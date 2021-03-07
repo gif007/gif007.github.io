@@ -87,16 +87,16 @@ a.Logo {
 	font-size: 0.8rem;
 }
 
-nav {
-	width: 550px;
-}
-
 ul.NavList {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 	
+}
+
+ul.NavList > li + li {
+	margin-left: 0.5rem;
 }
 
 ul.NavList > li > a {
@@ -191,6 +191,10 @@ img.ProjectImage {
 
 	h1, article {
 		width: 600px;
+	}
+
+	ul.NavList > li + li {
+		margin-left: 3rem;
 	}
 
 }

@@ -6,8 +6,8 @@ title: Projects
 <h1>Projects</h1>
 {% for project in site.projects %}
 <article role="article" class="ProjectCard">
-    <h2>{{ project.title }}</h2>
-    <h3>{{ project.techs }}</h3>
+    <h3>{{ project.title }}</h2>
+    <h4>{{ project.techs }}</h3>
     <section>
         <img src="/assets/images/{{ project.image }}" class="ProjectImage" />
         <p>{{project.content}}</p>

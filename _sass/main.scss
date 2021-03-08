@@ -1,49 +1,6 @@
-/* Reset CSS DOCUMENT */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
+@import "./reset";
+@import "./variables";
+@import "./mixins";
 
 /* Base Styles */
 
@@ -51,7 +8,7 @@ html, body {
 	box-sizing: border-box;
 	font-size: 14px;
 	font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
-	color: #0C3C26;
+	color: $baseFontColor;
 	line-height: 1.25;
 }
 
@@ -72,11 +29,9 @@ a:hover {
 }
 
 header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	@include flex(row, space-between);
 	padding: 1.5rem;
-	background-color: #0C4B33;
+	background-color: $darkGreen;
 	position: sticky;
 	top: 0;
 }
@@ -88,38 +43,28 @@ a.Logo {
 }
 
 ul.NavList {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-	
+    @include flex(row, space-around);
+	li + li {
+		margin-left: 0.5rem;
+	}
+	li > a {
+		text-decoration: none;
+		font-weight: 700;
+		color: white;
+		font-size: 0.8rem;
+		line-height: 1;
+		&:hover {
+			color: $navHover;
+		}
+	}
+	li > a.Active {
+		border-bottom: 2px solid $lightGreen;
+	}
 }
 
-ul.NavList > li + li {
-	margin-left: 0.5rem;
-}
-
-ul.NavList > li > a {
-	text-decoration: none;
-	font-weight: 700;
-	color: white;
-	font-size: 0.8rem;
-	line-height: 1;
-}
-
-ul.NavList > li > a:hover {
-	color: #C9F0DD;
-}
-
-ul.NavList > li > a.Active {
-	border-bottom: 2px solid #44B78B;
-}
-
-main { 
-	display: flex;
+main {
+	@include flex(column, flex-start);
 	padding: 5rem;
-	align-items: center;
-	flex-direction: column;
 }
 
 h1 {
@@ -127,7 +72,7 @@ h1 {
 	font-size: 2.25rem;
 	letter-spacing: -1px;
 	line-height: 1.5;
-	width: 300px;
+	width: $contentWidth;
 }
 
 h2 {
@@ -150,7 +95,7 @@ h4 {
 
 footer {
 	padding: 2rem;
-	background-color: #0C4B33;
+	background-color: $darkGreen;
 	height: 250px;
 }
 
@@ -158,7 +103,7 @@ footer {
 /* Style Index */
 
 article {
-	width: 300px;
+	width: $contentWidth;
 	margin-top: 2rem;
 }
 
@@ -173,7 +118,7 @@ p {
 div.colorsplash {
 	width: 250px;
 	height: 250px;
-	background-color: #44B78B;
+	background-color: $lightGreen;
 	margin-top: 1rem;
 }
 

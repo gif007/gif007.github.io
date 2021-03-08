@@ -2,7 +2,9 @@
 title: Recipe Builder
 summary: A dynamic recipe builder that can POST to a database.
 techs: JavaScript
-image: recipe.png
+category: javascript
+source: https://github.com/gif007/callisto
+live: https://github.com/gif007/callisto
 ---
 
-Try it <a href="https://github.com/gif007/callisto">live</a>.
+recipebuilder

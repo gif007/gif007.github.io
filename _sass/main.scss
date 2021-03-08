@@ -34,6 +34,7 @@ header {
 	background-color: $darkGreen;
 	position: sticky;
 	top: 0;
+	z-index: 9001;
 }
 
 a.Logo {
@@ -99,6 +100,10 @@ footer {
 	height: 250px;
 }
 
+.centered {
+	text-align: center;
+}
+
 
 /* Style Index */
 
@@ -111,6 +116,8 @@ article + article {
 	margin-top: 5rem;
 }
 
+
+
 p {
 	margin-top: 1rem;
 }
@@ -120,13 +127,6 @@ div.colorsplash {
 	height: 250px;
 	background-color: $lightGreen;
 	margin-top: 1rem;
-}
-
-img.ProjectImage {
-	float: left;
-	margin-right: 1rem;
-	width: 75px;
-	height: 75px;
 }
 
 @media screen and (min-width: 760px) {
@@ -140,6 +140,45 @@ img.ProjectImage {
 
 	ul.NavList > li + li {
 		margin-left: 3rem;
+	}
+
+	section.ProjectList {
+		@include flex(row, space-between);
+		flex-wrap: wrap;
+		padding: 1rem;
+		width: 600px;
+
+		article {
+			border: 1px solid black;
+			width: 276px;
+			height: 276px;
+			margin: 1rem 0 0 0;
+			border-radius: 1rem;
+			padding: 1rem;
+			position: relative;
+
+			img {
+				position: absolute;
+				top: -12px;
+				left: 36px;
+				border-radius: 12px;
+			}
+
+			p {
+				margin: 1rem 0;
+			}
+
+			div {
+				width: 90%;
+				position: absolute;
+				bottom: 0.5rem;
+				span + span {
+					float: right;
+				}
+			}
+
+		}
+
 	}
 
 }

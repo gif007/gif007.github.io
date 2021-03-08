@@ -3,14 +3,23 @@ layout: base
 title: Projects
 ---
 
-<h1>Projects</h1>
-{% for project in site.projects %}
-<article role="article" class="ProjectCard">
-    <h3>{{ project.title }}</h2>
-    <h4>{{ project.techs }}</h3>
-    <section>
-        <img src="/assets/images/{{ project.image }}" class="ProjectImage" />
-        <p>{{project.content}}</p>
-    </section>
-</article>
-{% endfor %}
+<h1 class="centered">Projects</h1>
+
+<section class="ProjectList">
+
+    {% for project in site.projects %}
+        <article role="article">
+            <img src="/assets/images/{{ project.category }}.png" />
+            <h3>{{ project.title }}</h3>
+            <h4>{{ project.techs }}</h4>
+            <p>{{ project.content }}</p>
+            <div>
+                <span>View <a href="{{ project.source }}">source</a></span>
+                {% if project.live %}
+                    <span>Try it <a href="{{ project.live }}">live</a></span>
+                {% endif %}
+            </div>
+        </article>
+    {% endfor %}
+
+</section>

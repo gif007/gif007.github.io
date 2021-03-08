@@ -129,6 +129,45 @@ div.colorsplash {
 	margin-top: 1rem;
 }
 
+section.ProjectList {
+	@include flex(column, space-between);
+	flex-wrap: wrap;
+	width: $contentWidth;
+
+	article {
+		border: 2px solid black;
+		width: 282px;
+		height: 276px;
+		margin: 2rem 0 0 0;
+		border-radius: 1rem;
+		padding: 1rem;
+		position: relative;
+
+		img {
+			border: 2px solid black;
+			position: absolute;
+			top: -14px;
+			left: 36px;
+			border-radius: 14px;
+		}
+
+		p {
+			margin: 1rem 0;
+		}
+
+		div {
+			width: 90%;
+			position: absolute;
+			bottom: 0.5rem;
+			span + span {
+				float: right;
+			}
+		}
+
+	}
+
+}
+
 @media screen and (min-width: 760px) {
     html {
         font-size: 16px;
@@ -143,42 +182,7 @@ div.colorsplash {
 	}
 
 	section.ProjectList {
-		@include flex(row, space-between);
-		flex-wrap: wrap;
-		padding: 1rem;
+		flex-direction: row;
 		width: 600px;
-
-		article {
-			border: 1px solid black;
-			width: 276px;
-			height: 276px;
-			margin: 1rem 0 0 0;
-			border-radius: 1rem;
-			padding: 1rem;
-			position: relative;
-
-			img {
-				position: absolute;
-				top: -12px;
-				left: 36px;
-				border-radius: 12px;
-			}
-
-			p {
-				margin: 1rem 0;
-			}
-
-			div {
-				width: 90%;
-				position: absolute;
-				bottom: 0.5rem;
-				span + span {
-					float: right;
-				}
-			}
-
-		}
-
 	}
-
 }

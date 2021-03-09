@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Projects",
+        "link": "/projects.html"
+    },
+
+    {
+        "name": "Tech Stack",
+        "link": "/tech.html"
+    },
+
+    {
+        "name": "Contact",
+        "link": "/contact.html"
+    }
+]

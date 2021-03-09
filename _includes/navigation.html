@@ -1,27 +1,11 @@
 <nav role="navigation">
     <ul class='NavList'>
+        {% for item in site.data.navigation %}
         <li>
-            <a href="/about.html" {% if page.url == '/about.html' %}class="Active"{% endif %}>
-                ABOUT
+            <a href="{{ item.link }}" {% if page.url == item.link %}class="Active"{% endif %}>
+                {{ item.name | upcase }}
             </a>
         </li>
-
-        <li>
-            <a href="/projects.html" {% if page.url == '/projects.html' %}class="Active"{% endif %}>
-                PROJECTS
-            </a>
-        </li>
-            
-        <li>
-            <a href="/tech.html" {% if page.url == '/tech.html' %}class="Active"{% endif %}>
-                TECH STACK
-            </a>
-        </li>
-
-        <li>
-            <a href="/contact.html" {% if page.url == '/contact.html' %}class="Active"{% endif %}>
-                CONTACT
-            </a>
-        </li>
+        {% endfor %}
     </ul>
 </nav>

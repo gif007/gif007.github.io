@@ -7,15 +7,16 @@ title: Contact
 
 <article role="article">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <form role="form">
+    <form role="form" action="https://formspree.io/f/xqkgrevw" method="POST">
         <fieldset>
             <legend>Form</legend>
             <label for="name">Your name:</label>
-            <input name="name" id="name" type="text" aria-required="true" />
+            <input name="name" id="name" type="text" aria-required="true" required />
             <label for="email">Email:</label>
-            <input name="email" id="email" type="email" aria-required="true" />
+            <input name="email" id="email" type="email" aria-required="true" required />
             <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" aria-required="true" required></textarea>
+            <button type="submit">Submit</button>
         </fieldset>
     </form>
 </article>

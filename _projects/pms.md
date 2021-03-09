@@ -3,7 +3,7 @@ title: Project Manager
 summary: A project management web application based on the CRUD principles.
 techs: PHP, MariaDB
 category: php
-source: https://github.com/gif007/callisto
+source: https://github.com/gif007/projectmanager
 live: false
 ---
 

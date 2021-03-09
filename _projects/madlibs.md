@@ -4,7 +4,7 @@ summary: Inspired by Madlibs, this clone is written entirely in vanilla JavaScri
 techs: JavaScript
 category: javascript
 source: https://github.com/gif007/callisto
-live: https://github.com/gif007/callisto
+live: false
 ---
 
-madlibs
+Not yet implemented

@@ -1,0 +1,46 @@
+---
+layout: base
+title: Recipe Builder
+script: <script src="/assets/js/recipe.js" defer></script>
+css: <link rel="stylesheet" href="/assets/css/recipe.css">
+---
+
+<form id="recipebuilder">
+    <fieldset>
+      <legend>Recipe Builder</legend>
+
+      <label data-column="label" for="title">Title</label>
+      <input data-column="field" id="title" name="title" type="text" minlength="1" maxlength="35" aria-placeholder="Enter title..." placeholder="Enter title..."/>
+
+      <label data-column="label" for="yield">Yield</label>
+      <input data-column="field" id="yield" name="yield" type="text" minlength="1" maxlength="25" aria-placeholder="Enter yield..." placeholder="Enter yield..." />
+
+      <label data-column="label" for="description">Description</label>
+      <textarea data-column="field" id="description" name="description" minlength="1" maxlength="255" aria-placeholder="Tell us about your recipe" placeholder="Tell us about your recipe"></textarea>
+
+      <label data-column="label" for="ingredient">Add Ingredient</label>
+      <div class="dynamicInput">
+        <input data-column="field" id="ingredient" name="ingredient" type="text" minlength="1" maxlength="50" aria-placeholder="Ingredient..." placeholder="Ingredient..." />
+        <button id="addingredient" type="button">+</button>
+      </div>
+  
+      <label data-column="label" for="direction">Add Direction</label>
+      <div class="dynamicInput">
+        <input data-column="field" id="direction" name="direction" type="text" minlength="1" maxlength="50" aria-placeholder="Direction..." placeholder="Direction..." />
+        <button id="adddirection" type="button">+</button>
+      </div>
+
+      <h2>Ingredients:</h2>
+      <ul id="ingredientlist">
+        
+      </ul>
+      <h2>Directions:</h2>
+      <ol id="directionlist">
+        
+      </ol>
+      <div>
+        <button id="preview" type="button">Preview</button>
+        <button type="submit">Submit</button>
+      </div>
+    </fieldset>
+</form>

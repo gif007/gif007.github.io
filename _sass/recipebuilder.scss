@@ -1,0 +1,141 @@
+@import "./variables";
+
+form#recipebuilder {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border: 2px solid black;
+        border-radius: 22px;
+        background: $lightGreen;
+
+        legend {
+            margin: auto;
+            font-weight: 700;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            border: 2px solid black;
+            background: white;
+            border-radius: 22px;
+        }
+
+        label {
+            position: relative;
+            left: 9001px;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        input, textarea {
+            border: 2px solid black;
+            border-radius: 17px;
+            padding: 6px;
+        }
+
+        label, input, textarea {
+            width: 300px;
+        }
+
+        div.dynamicInput {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                width: 250px;
+            }
+    
+            button {
+                width: 34px;
+                padding: 0;
+                display: inline;
+                border: 1px solid black;
+                border-radius: 17px;
+                cursor: pointer;
+                background: rgb(38, 38, 236);
+                color: white;
+                font-weight: 700;
+                &:hover {
+                    background: rgb(18, 18, 170);
+                }
+            }
+        }
+
+        textarea {
+            resize: none;
+            height: 10rem;
+        }
+
+        ul, ol {
+            margin: 1rem 2rem;
+            list-style-type: disc;
+
+            li {
+                max-width: 250px;
+                word-wrap: break-word;
+            }
+
+            button {
+                width: 20px;
+                margin-left: 12px;
+                padding: 0;
+                border: 1px solid black;
+                border-radius: 10px;
+                background: red;
+                color: white;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        h2 {
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+
+        button {
+            border: 2px solid black;
+            padding: 0.75rem 1rem;
+            border-radius: 23px;
+            cursor: pointer;
+            font-weight: 700;
+            &:hover {
+                background: rgb(180, 167, 167);
+            }
+        }
+
+        button + button {
+            float: right;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    form#recipebuilder {
+        fieldset {
+            label, input, textarea {
+                width: 600px;
+            }
+
+            div.dynamicInput {
+                input {
+                    width: 550px;
+                }
+            }
+
+            ol, ul {
+                li {
+                    max-width: 550px;
+                }
+            }
+        }
+    }
+}

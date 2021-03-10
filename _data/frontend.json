@@ -1,0 +1,22 @@
+[
+    {
+        "name": "ES6",
+        "summary": "Modern JavaScript"
+    },
+
+    {
+        "name": "CSS3",
+        "summary": "Modern cascading style sheets"
+    },
+
+    {
+        "name": "HTML5",
+        "summary": "Modern, semantic HTML"
+    },
+
+    {
+        "name": "React",
+        "summary": "Front end UI library"
+    }
+
+]

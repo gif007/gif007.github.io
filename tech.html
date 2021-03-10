@@ -3,9 +3,17 @@ layout: base
 title: Tech Stack
 ---
 
-<h1>Tech Stack</h1>
+<h1>Front End</h1>
 
-{% for tech in site.data.techs %}
+{% for tech in site.data.frontend %}
+    <article role="article">
+        <h2>{{ tech.name }}</h2>
+        <p>{{ tech.summary }}</p>
+    </article>
+{% endfor %}
+
+<h1 class="mt">Server Side</h1>
+{% for tech in site.data.backend %}
     <article role="article">
         <h2>{{ tech.name }}</h2>
         <p>{{ tech.summary }}</p>

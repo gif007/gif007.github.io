@@ -11,6 +11,7 @@ html, body {
 	font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
 	color: $baseFontColor;
 	line-height: 1.25;
+	overflow-x: hidden;
 }
 
 *:after, *:before, * {

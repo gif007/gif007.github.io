@@ -12,7 +12,7 @@ title: Projects
             <img src="/assets/images/{{ project.category }}.png" />
             <h3>{{ project.title }}</h3>
             <h4>{{ project.techs }}</h4>
-            <p>{{ project.content }}</p>
+            {{ project.content }}
             <div>
                 <span>View <a href="{{ project.source }}">source</a></span>
                 {% if project.live %}

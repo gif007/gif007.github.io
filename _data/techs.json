@@ -1,0 +1,37 @@
+[
+    {
+        "name": "ES6",
+        "summary": "Modern JavaScript"
+    },
+
+    {
+        "name": "Python",
+        "summary": "Dynamic, general purpose programming language"
+    },
+
+    {
+        "name": "CSS3",
+        "summary": "Modern cascading style sheets"
+    },
+
+    {
+        "name": "HTML5",
+        "summary": "Modern, semantic HTML"
+    },
+
+    {
+        "name": "Django",
+        "summary": "Batteries included web framework built on top of Python"
+    },
+
+    {
+        "name": "React",
+        "summary": "Front end UI library"
+    },
+
+    {
+        "name": "Node",
+        "summary": "JavaScript runtime environment that operates directly on the filesystem"
+    }
+
+]

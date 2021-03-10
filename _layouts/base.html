@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="shortcut icon" type="image/png" href="/assets/images/fav.ico"/>
+  {{ page.script }}
 
   {% feed_meta %}
   {% seo %}
@@ -24,7 +25,6 @@
       <h4>(Under Construction)</h4>
       {{content}}
     </main>
-    <script src="/assets/js/main.js"></script>
     {% include footer.html %}
 </body>
 </html>

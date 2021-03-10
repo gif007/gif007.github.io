@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Contact
+script: <script src="/assets/js/main.js" defer></script>
 ---
 
 <h1>Contact</h1>
@@ -10,12 +11,12 @@ title: Contact
     <form role="form" action="https://formspree.io/f/xqkgrevw" method="POST">
         <fieldset>
             <legend>Form</legend>
-            <label for="name">Your name:</label>
-            <input name="name" id="name" type="text" aria-required="true" required />
-            <label for="email">Email:</label>
-            <input name="email" id="email" type="email" aria-required="true" required />
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" aria-required="true" required></textarea>
+            <label data-column="label" for="name">Your name:</label>
+            <input data-column="field" name="name" id="name" type="text" aria-placeholder="Enter name..." placeholder="Enter name..." aria-required="true" required />
+            <label data-column="label" for="email">Email:</label>
+            <input data-column="field" name="email" id="email" type="email" aria-placeholder="Enter email..." placeholder="Enter email..." aria-required="true" required />
+            <label data-column="label" for="message">Message:</label>
+            <textarea data-column="field" id="message" name="message" aria-placeholder="Enter your message..." placeholder="Enter your message..." aria-required="true" required></textarea>
             <button type="submit">Submit</button>
         </fieldset>
     </form>

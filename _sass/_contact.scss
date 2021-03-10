@@ -6,6 +6,12 @@ form {
 
         input, textarea, label {
             width: 100%;
+            font: inherit;
+        }
+
+        label {
+            position: relative;
+            left: 9001px;
         }
 
         label, button {

@@ -258,7 +258,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 212)
-  jekyll-feed
   jekyll-seo-tag
   jekyll-sitemap
 

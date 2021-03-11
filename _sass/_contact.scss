@@ -25,6 +25,18 @@ form {
 
         button {
             width: 100px;
+            background: $lightGreen;
+            border: 1px solid $darkGreen;
+            border-radius: 17px;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            &:active {
+                transform: translate(1px, 1px);
+                box-shadow: inset 0px 0px 5px;
+            }
+
         }
     }
 

@@ -1,42 +1,11 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import {
+    ContactContainer,
+    FormContainer,
+    ButtonContainer
+} from './contact-form.styles';
 
 
-const ContactContainer = styled.div`
-    position: fixed;
-    bottom: 0.5rem;
-    right: 0.5rem;
-
-    @media screen and (max-width:800px) {
-        position: relative;
-        bottom: unset;
-        right: unset;
-        text-align: center;
-    }
-`;
-
-const FormContainer = styled.form`
-    display: flex;
-    flex-flow: column;
-    min-width: 300px;
-
-    textarea {
-        resize: none;
-    }
-
-    @media screen and (max-width: 800px) {
-        min-width: unset;
-        width: 90vw;
-    }
-`;
-
-const ButtonContainer = styled.div`
-    display: flex;
-
-    button {
-        width: 50%;
-    }
-`;
 
 const ContactForm = () => {
     const [hidden, setHidden] = useState(false);
@@ -44,40 +13,44 @@ const ContactForm = () => {
 
     return (
     <ContactContainer>
-        <div>
             {
                 hidden ? (
-                    <FormContainer action='https://formspree.io/f/xqkgrevw' method='POST'>
-                        <input
-                            type='text'
-                            id='name'
-                            name='name'
-                            required
-                        ></input>
-                        <input
-                            type='email'
-                            id='email'
-                            name='email'
-                            required
-                        ></input>
-                        <textarea
-                            rows='5'
-                            id='message'
-                            name='message'
-                            required
-                        ></textarea>
-
-                        <ButtonContainer>
-                            <button type='submit'>Submit</button>
-                            <button type='button' onClick={() => setHidden(!hidden)}>Close</button>
-                        </ButtonContainer>
-
-                    </FormContainer>
+                    <div>
+                        <ButtonContainer x type='button' onClick={() => setHidden(!hidden)} title='Close'>&#10005;</ButtonContainer>
+                        <FormContainer action='https://formspree.io/f/xqkgrevw' method='POST'>
+                            <label htmlFor='name'>Name:</label>
+                            <input
+                                type='text'
+                                id='name'
+                                name='name'
+                                required
+                            ></input>
+                            <label htmlFor='email'>Email:</label>
+                            <input
+                                type='email'
+                                id='email'
+                                name='email'
+                                required
+                            ></input>
+                            <label htmlFor='message'>Message:</label>
+                            <textarea
+                                rows='5'
+                                id='message'
+                                name='message'
+                                required
+                            ></textarea>
+                            <ButtonContainer center type='submit' title='Send'>&#10169;</ButtonContainer>
+                        </FormContainer>
+                    </div>
                 ) : (
-                    <button type='button' onClick={() => setHidden(!hidden)}>Get in touch</button>
+                    <ButtonContainer
+                        type='button'
+                        onClick={() => setHidden(!hidden)}
+                    >
+                        Get in touch
+                    </ButtonContainer>
                 )
             }
-        </div>
     </ContactContainer>
 )};
 

@@ -31,8 +31,8 @@ module.exports = {
         name: `personal portfolio of ntc`,
         short_name: `ntc portfolio`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#259662`,
+        theme_color: `#259662`,
         display: `minimal-ui`,
         icon: `src/images/logo512.png`, // This path is relative to the root of the site.
       },

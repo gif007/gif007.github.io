@@ -14,7 +14,7 @@ export const ExcerptContainer = styled.div`
     border-top: 1px solid lightgrey;
     padding: 16px;
     background: white;
-    max-width: 55vw;
+    max-width: 600px;
 
     @media screen and (max-width: 800px) {
         max-width: 90vw;

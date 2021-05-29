@@ -1,10 +1,11 @@
 ---
 title: "Weather GUI"
 date: "2021-05-18"
-description: "Written in Python, this web scraper collects weather data and arranges it in a graphical user interface that is built with the TK interface package."
 featured: true
+codeURL: "https://github.com/gif007/py-weather-app"
+liveURL: ""
 ---
-### Web Scraper
+Written in Python, this web scraper collects weather data and arranges it in a graphical user interface that is built with the TK interface package.
 
 A weather data scraper coded in python.
 

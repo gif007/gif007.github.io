@@ -39,14 +39,13 @@ export const query = graphql`
       edges {
         node {
           id
-          fields {
-            slug
-          }
+          html
           frontmatter {
             title
-            description
             featured
             date
+            liveURL
+            codeURL
           }
           excerpt
         }

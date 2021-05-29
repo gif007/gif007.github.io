@@ -31,8 +31,10 @@ export const FormContainer = styled.form`
     input, textarea {
         margin-bottom: 4px;
         border: none;
-        border-top: 1px solid lightgrey;
-        border-left: 2px solid lightgrey;
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+        border-left: 2px solid black;
+        border-right: 2px solid lightgrey;
     }
 
     textarea {
@@ -64,7 +66,6 @@ const checkProps = (props) => {
 }
 
 export const ButtonContainer = styled.button`
-    color: blue;
     font-weight: 700;
     border: none;
     cursor: pointer;
@@ -73,7 +74,7 @@ export const ButtonContainer = styled.button`
     border-radius: 50px;
 
     :hover {
-        background: unset;
+        text-decoration: underline;
     }
 
     ${checkProps}

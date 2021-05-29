@@ -619,8 +619,12 @@ h1, h2, h3, h4 {
   font-family: "Open Sans";
 }
 
-a:hover {
+a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 img {

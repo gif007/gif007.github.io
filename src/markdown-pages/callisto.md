@@ -1,10 +1,11 @@
 ---
 title: "Callisto"
 date: "2021-02-14"
-description: "An online game written with Django and a homebrew javascript API.  It uses promise based algorithms and database operations to simulate an out of world adventure."
 featured: false
+codeURL: "https://github.com/gif007/callisto"
+liveURL: ""
 ---
-### Persistent online game
+An online game written with Django and a homebrew javascript API.  It uses promise based algorithms and database operations to simulate an out of world adventure.
 
 Web game written in Python and JavaScript utilizing Django and the Fetch API
 

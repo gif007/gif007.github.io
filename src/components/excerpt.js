@@ -9,25 +9,25 @@ import {
 
 
 const Excerpt = ({node}) => {
-    const [hovered, setHovered] = useState(false);
+    const [clicked, setClicked] = useState(false);
 
     return (
         <ExcerptContainer
-            onClick={() => setHovered(!hovered)}
-            hovered={hovered}
+            onClick={() => setClicked(!clicked)}
+            clicked={clicked}
         >
             <PostHeading>
                 {node.frontmatter.title} - {node.frontmatter.date}
             </PostHeading>
             {
-                hovered ? (
+                clicked ? (
                     <>
                     <DescriptionText dangerouslySetInnerHTML={{__html: node.html}} />
                     <ExternalLinksContainer>
-                        <span><a href={node.frontmatter.codeURL}>Code</a></span>
+                        <span><a href={node.frontmatter.codeURL}>Source code</a></span>
                         {
                             node.frontmatter.liveURL ? (
-                                <span><a href={node.frontmatter.liveURL}>Live</a></span>
+                                <span><a href={node.frontmatter.liveURL}>See it live</a></span>
                             ) : (
                                 null
                             )

@@ -29,12 +29,9 @@ export const FormContainer = styled.form`
     }
 
     input, textarea {
-        margin-bottom: 4px;
+        margin: 6px 0 8px;
         border: none;
-        border-top: 2px solid grey;
-        border-bottom: 2px solid grey;
-        border-left: 2px solid black;
-        border-right: 2px solid lightgrey;
+        box-shadow: 5px 10px 12px lightgrey;
     }
 
     textarea {
@@ -72,9 +69,15 @@ export const ButtonContainer = styled.button`
     background: white;
     padding: 8px;
     border-radius: 50px;
+    box-shadow: 5px 10px 12px lightgrey;
 
     :hover {
         text-decoration: underline;
+    }
+
+    :active {
+        transform: translate(1px, 2px);
+        box-shadow: 2px 3px 4px lightgrey;
     }
 
     ${checkProps}

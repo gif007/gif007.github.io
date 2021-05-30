@@ -5,8 +5,8 @@ export const DescriptionText = styled.p`
     margin-top: 14px;
 `;
 
-const isHovered = (props) => {
-    if (props.hovered) {
+const isClicked = (props) => {
+    if (props.clicked) {
         return css`
             cursor: auto;
         `;
@@ -18,8 +18,9 @@ export const ExcerptContainer = styled.div`
     background: white;
     max-width: 600px;
     cursor: pointer;
+    box-shadow: 5px 10px 12px lightgrey;
 
-    ${isHovered}
+    ${isClicked}
     
     @media screen and (max-width: 800px) {
         max-width: 90vw;

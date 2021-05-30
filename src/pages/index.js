@@ -47,7 +47,7 @@ export const query = graphql`
             liveURL
             codeURL
           }
-          excerpt
+          excerpt(truncate: false, pruneLength: 175)
         }
       }
       totalCount

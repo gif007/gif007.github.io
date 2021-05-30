@@ -5,6 +5,28 @@ featured: true
 codeURL: "https://github.com/gif007/crwn-clothing"
 liveURL: "https://crwn-clothing-ns.herokuapp.com/"
 ---
-An e-commerce web application written with React, Redux, Redux-Sagas, Reselect, Axios, Firebase and a bunch of other stuff.
+Written in JavaScript, this web application
 
-E-commerce web app created with React, Redux and Redux-Sagas. Includes a Stripe-backed POS checkout system.
+React
+
+Redux
+
+Redux-Sagas
+
+Redux-Persist
+
+Reselect
+
+Axios
+
+Firebase
+
+Express
+
+Styled-Components
+
+Stripe
+
+PWA
+
+Responsive

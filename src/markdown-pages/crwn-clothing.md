@@ -5,7 +5,7 @@ featured: true
 codeURL: "https://github.com/gif007/crwn-clothing"
 liveURL: "https://crwn-clothing-ns.herokuapp.com/"
 ---
-Created using **React.js**, this web application represents an e-commerce website where users can sign in using their Google account or a created profile, add items to a shopping cart from various catagories of clothing and checkout their cart using a test credit card.
+Created using **React.js**, this web application represents an e-commerce website where users can sign in using their Google account or a created profile, add items to a shopping cart from various categories of clothing and checkout their cart using a test credit card.
 
 #### Libraries
 With **React.js** in the front-end, this application makes use of **Redux** for state management along with **Redux-Sagas** for asynchronous operations, and **Redux-Persist** for local caching.

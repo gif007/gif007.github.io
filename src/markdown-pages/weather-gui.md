@@ -5,7 +5,7 @@ featured: true
 codeURL: "https://github.com/gif007/py-weather-app"
 liveURL: ""
 ---
-Written in **Python**, this **web scraper** allows the user to select a region and have the latest 24 hour weather forecast displayed in a table along with a toggle to change between celsius and fahrenheit.
+Written in **Python**, this **web scraper** allows the user to select a region and have the latest 24 hour weather forecast displayed in a table along with a toggle to change between Celsius and Fahrenheit.
 
 #### Libraries
 

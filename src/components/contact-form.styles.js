@@ -5,6 +5,8 @@ export const ContactContainer = styled.div`
     position: fixed;
     bottom: 10px;
     right: 10px;
+    background: #f8f8f8;
+    padding-left: 8px;
 
     @media screen and (max-width:800px) {
         position: relative;

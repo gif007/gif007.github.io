@@ -12,22 +12,33 @@ const ProjectsList = styled.ul`
     }
 `;
 
+const ProjectHeader = styled.h2`
+  font-size: 2rem;
+
+  @media screen and (max-width: 800px) {
+    text-align: center;
+  }
+`;
+
 const Projects = ({data, featured=false}) => {
     // This component returns either a list of featured projects,
     // or a list of non-featured projects.  Defaults to non-featured.
     
     // The data being passed into it must be a query which returns enough data to create an excerpt
     return (
-        <ProjectsList>
-            {
-                data.allMarkdownRemark.edges.map(({node}) => {
-                    if (node.frontmatter.featured === featured) {
-                        return <li key={node.id}><Excerpt node={node} /></li>;
-                    }
-                    return null;
-                })
-            }
-        </ProjectsList>
+        <div>
+            <ProjectHeader>{featured ? 'Featured Projects' : 'Projects'}</ProjectHeader>
+            <ProjectsList>
+                {
+                    data.allMarkdownRemark.edges.map(({node}) => {
+                        if (node.frontmatter.featured === featured) {
+                            return <li key={node.id}><Excerpt node={node} /></li>;
+                        }
+                        return null;
+                    })
+                }
+            </ProjectsList>
+        </div>
     )
 };
 

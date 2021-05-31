@@ -9,20 +9,21 @@ import {
 
 
 const Excerpt = ({node}) => {
-    const [clicked, setClicked] = useState(false);
+    const [expanded, setExpanded] = useState(false);
 
     return (
         <ExcerptContainer
-            onClick={() => setClicked(!clicked)}
-            clicked={clicked}
+            onClick={() => setExpanded(!expanded)}
+            expanded={expanded}
         >
             <PostHeading>
                 {node.frontmatter.title} - {node.frontmatter.date}
             </PostHeading>
             {
-                clicked ? (
+                expanded ? (
                     <>
                     <DescriptionText dangerouslySetInnerHTML={{__html: node.html}} />
+                    <hr />
                     <ExternalLinksContainer>
                         <span><a href={node.frontmatter.codeURL}>Source code</a></span>
                         {

@@ -14,10 +14,6 @@ const ProjectsList = styled.ul`
 
 const ProjectHeader = styled.h2`
   font-size: 2rem;
-
-  @media screen and (max-width: 800px) {
-    text-align: center;
-  }
 `;
 
 const Projects = ({data, featured=false}) => {

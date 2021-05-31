@@ -9,7 +9,7 @@ Written in **Python**, this **web scraper** allows the user to select a region a
 
 #### Libraries
 
-Upon launching the script, a **graphical user interface** is created using the **tkinter** package which provides the user with all of the drop-down lists, buttons and display areas that they need to navigate the simple **GUI**.
+Upon launching the script, a **graphical user interface** is created using the **tkinter** package which provides the user with all of the drop-down lists, buttons and display areas that they need to navigate the simple interface.
 
 The **JSON** package allows for configuration options to be kept separate and **readable** using one of the industry's most common and well understood **data formats**.
 

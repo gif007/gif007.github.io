@@ -14,6 +14,7 @@ import "./layout.css" // global styles
 import styled from 'styled-components';
 
 import GitHubLogo from '../images/GitHub-Mark-32px.png';
+import LinkedInLogo from '../images/LI-In-Bug.png';
 
 
 const BodyContainer = styled.div`
@@ -28,6 +29,10 @@ const FooterContainer = styled.footer`
 
 const ImageContainer = styled.span`
   margin-right: 1rem;
+`;
+
+const Copy = styled.div`
+  margin-top: 1rem;
 `;
 
 const Layout = ({ children }) => {
@@ -52,9 +57,16 @@ const Layout = ({ children }) => {
               <img src={GitHubLogo} alt='GitHub icon'/>
             </a>
           </ImageContainer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <ImageContainer>
+            <a href='https://www.linkedin.com/in/neil-carruthers/'>
+              <img src={LinkedInLogo} alt='LinkedIn icon'/>
+            </a>
+          </ImageContainer>
+          <Copy>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.com">Gatsby</a>
+          </Copy>
         </FooterContainer>
       </BodyContainer>
     </>

@@ -12,11 +12,8 @@ const Excerpt = ({node}) => {
     const [expanded, setExpanded] = useState(false);
 
     return (
-        <ExcerptContainer
-            onClick={() => setExpanded(!expanded)}
-            expanded={expanded}
-        >
-            <PostHeading>
+        <ExcerptContainer>
+            <PostHeading onClick={() => setExpanded(!expanded)}>
                 {node.frontmatter.title} - {node.frontmatter.date}
             </PostHeading>
             {

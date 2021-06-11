@@ -1,7 +1,7 @@
 ---
 title: "Project Manager"
 date: "2021-01-28"
-featured: false
+featured: true
 codeURL: "https://github.com/gif007/projectmanager"
 liveURL: ""
 ---

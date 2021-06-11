@@ -1,7 +1,7 @@
 ---
 title: "Weather Buddy"
 date: "2021-05-18"
-featured: false
+featured: true
 codeURL: "https://github.com/gif007/py-weather-app"
 liveURL: ""
 ---

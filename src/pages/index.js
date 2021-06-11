@@ -13,7 +13,6 @@ const IndexPage = ({data}) => {
   <Layout>
     <Seo title="Home" />
       <Projects data={data} featured />
-      <Projects data={data} />
     <ContactForm />
   </Layout>
 )}

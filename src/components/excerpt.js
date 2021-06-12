@@ -14,7 +14,7 @@ const Excerpt = ({node}) => {
     return (
         <ExcerptContainer>
             <PostHeading onClick={() => setExpanded(!expanded)}>
-                {node.frontmatter.title} - {node.frontmatter.date}
+                {node.frontmatter.title}
             </PostHeading>
             {
                 expanded ? (

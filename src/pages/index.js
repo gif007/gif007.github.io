@@ -29,7 +29,6 @@ export const query = graphql`
           frontmatter {
             title
             featured
-            date
             liveURL
             codeURL
           }

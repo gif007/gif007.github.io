@@ -3,17 +3,20 @@ import Excerpt from './excerpt';
 import styled from 'styled-components';
 
 
-const ProjectsList = styled.ul`
-    list-style-type: none;
-    margin: 36px 0 64px;
+// const ProjectsList = styled.ul`
+//     list-style-type: none;
+//     margin: 36px 0 64px;
 
-    li + li {
-        margin-top: 48px;
-    }
+//     li + li {
+//         margin-top: 48px;
+//     }
+// `;
+
+const ProjectsList = styled.div`
 `;
 
 const ProjectHeader = styled.h2`
-  font-size: 2rem;
+  font-size: 2.5rem;
 `;
 
 const Projects = ({data, featured=false}) => {
@@ -28,7 +31,7 @@ const Projects = ({data, featured=false}) => {
                 {
                     data.allMarkdownRemark.edges.map(({node}) => {
                         if (node.frontmatter.featured === featured) {
-                            return <li key={node.id}><Excerpt node={node} /></li>;
+                            return <Excerpt node={node}  key={node.id} />;
                         }
                         return null;
                     })

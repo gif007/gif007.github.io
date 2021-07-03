@@ -1,41 +1,37 @@
 import React from "react"
-import {graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Projects from '../components/projects';
-import ContactForm from '../components/contact-form';
+import Section from '../components/section/section.component';
+import NameAndResume from "../components/name-and-resume/name-and-resume.component";
+import AboutMe from '../components/about-me/about-me.component';
+import MySkills from "../components/my-skills/my-skills.component";
 
 
-const IndexPage = ({data}) => {
+const IndexPage = () => {
 
   return (
   <Layout>
     <Seo title="Home" />
-      <Projects data={data} featured />
-    <ContactForm />
+      <Section color='#f3f8fc' justify='flex-start'>
+        <NameAndResume />
+      </Section>
+      <Section justify='flex-end'>
+        <AboutMe />
+      </Section>
+      <Section color='#f3f8fc'>
+        <MySkills />
+      </Section>
+      <Section>
+        <span>Services</span>
+      </Section>
+      <Section color='#f3f8fc' height='100vh'>
+        <span>Portfolio</span>
+      </Section>
+      <Section height='100vh'>
+        <span>Contact Form</span>
+      </Section>
   </Layout>
 )}
 
 export default IndexPage
-
-export const query = graphql`
-  query HomePageQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          id
-          html
-          frontmatter {
-            title
-            featured
-            liveURL
-            codeURL
-          }
-          excerpt(truncate: false, pruneLength: 175)
-        }
-      }
-      totalCount
-    }
-  }
-`;

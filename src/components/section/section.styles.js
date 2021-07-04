@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
 export const SectionWrapper = styled.section`
-    height: ${props => props.height || '60vh' };
+    height: ${props => props.height || '85vh' };
     background-color: ${props => props.color || 'white'};
-    padding: 0 10rem;
+    background-image: url(${props => props.bg ? props.bg.image : '' });
+    background-repeat: no-repeat;
+    background-position: ${props => props.bg ? props.bg.position : ''};
+    padding: 0 6rem;
     display: flex;
     align-items: center;
     justify-content: ${props => props.justify || 'center'};

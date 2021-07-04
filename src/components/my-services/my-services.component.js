@@ -5,16 +5,16 @@ import {
     GenericListContainer
 } from '../generic/generic.styles';
 
-const MySkills = () => (
+
+const MyServices = () => (
     <GenericContainer>
-        <GenericHeadingWrapper>My Skills</GenericHeadingWrapper>
+        <GenericHeadingWrapper>Services</GenericHeadingWrapper>
         <GenericListContainer>
-            <div>HTML & CSS</div>
-            <div>ES6</div>
-            <div>REACT/REDUX</div>
-            <div>SQL & NoSQL</div>
+            <div>Web Design</div>
+            <div>UI/UX Design</div>
+            <div>SEO & Marketing</div>
         </GenericListContainer>
     </GenericContainer>
 );
 
-export default MySkills;
+export default MyServices;

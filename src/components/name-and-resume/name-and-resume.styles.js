@@ -6,10 +6,11 @@ export const NameAndResumeContainer = styled.div`
 `;
 
 export const NameWrapper = styled.h1`
-    font-size: 5rem;
+    font-size: 70px;
     font-weight: 700;
     letter-spacing: 3px;
     font: 'Work sans', sans-serif;
+    margin-bottom: 0.5rem;
 
     @media screen and (max-width: 800px) {
         font-size: 2rem;
@@ -17,10 +18,12 @@ export const NameWrapper = styled.h1`
 `;
 
 export const TitleWrapper = styled.h2`
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: bold;
     font-variant-caps: all-small-caps;
+    letter-spacing: 3px;
     color: rgb(102,102,102);
+    margin-bottom: 2rem;
 `;
 
 export const DownloadResumeWrapper = styled.button`

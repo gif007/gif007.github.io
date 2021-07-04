@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderWrapper } from './masthead.styles';
+import { HeaderWrapper } from './header.styles';
 import BurgerIcon from '../burger-icon/burger-icon.component';
 
 const Masthead = () => (

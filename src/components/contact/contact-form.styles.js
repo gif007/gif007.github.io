@@ -1,29 +1,15 @@
 import styled, { css } from 'styled-components';
 
 
-export const ContactContainer = styled.div`
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background: #f8f8f8;
-    padding-left: 8px;
-
-    @media screen and (max-width:800px) {
-        position: relative;
-        bottom: unset;
-        right: unset;
-        text-align: center;
-    }
-`;
-
 export const FormContainer = styled.form`
     display: flex;
     flex-flow: column;
-    min-width: 300px;
+    width: 40vw;
     margin: 0;
 
     label {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        font-weight: 700;
 
         @media screen and (max-width: 800px) {
             text-align: left;
@@ -31,7 +17,7 @@ export const FormContainer = styled.form`
     }
 
     input, textarea {
-        margin: 6px 0 8px;
+        margin: 12px 0;
         border: none;
         box-shadow: 5px 10px 12px lightgrey;
     }
@@ -47,14 +33,6 @@ export const FormContainer = styled.form`
 `;
 
 const checkProps = (props) => {
-    if (props.x) {
-        return css`
-            position: absolute;
-            right: 0;
-            top: -24px;
-        `;
-    }
-
     if (props.center) {
         return css`
             max-width: 100px;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const MySkillsContainer = styled.div`
+export const GenericContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -8,13 +8,14 @@ export const MySkillsContainer = styled.div`
     height: 70%;
 `;
 
-export const HeadingWrapper = styled.h1`
+export const GenericHeadingWrapper = styled.h1`
     font-size: 2.5rem;
     text-align: center;
     height: 20%;
+    margin-bottom: 5rem;
 `;
 
-export const SkillContainer = styled.div`
+export const GenericListContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;

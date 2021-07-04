@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 
 // import Header from "./header"
-import Masthead from './masthead/masthead.component';
+import Masthead from './header/header.component';
 import "./layout.css" // global styles
 import styled from 'styled-components';
 

@@ -12,7 +12,8 @@ export const GenericHeadingWrapper = styled.h1`
     font-size: 2.5rem;
     text-align: center;
     height: 20%;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
+    letter-spacing: 4px;
 `;
 
 export const GenericListContainer = styled.div`
@@ -44,7 +45,7 @@ export const GenericSquareBorder = styled.div`
     :hover {
         position: relative;
         transform: translateY(-12px);
-        box-shadow: -6px 6px 3px 2px rgba(215, 215, 215, 1), 6px 6px 3px 2px rgba(215, 215, 215, 1);
+        box-shadow: -6px 6px 3px 2px rgba(0, 0, 255, .1), 6px 6px 3px 2px rgba(0, 0, 255, .1);
     }
 
     @media screen and (max-width: 800px) {

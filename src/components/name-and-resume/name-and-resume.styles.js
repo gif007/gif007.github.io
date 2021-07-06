@@ -26,7 +26,7 @@ export const TitleWrapper = styled.h2`
     margin-bottom: 2rem;
 `;
 
-export const DownloadResumeWrapper = styled.button`
+export const DownloadResumeWrapper = styled.a`
     border: none;
     border-radius: 8px;
     background: teal;
@@ -35,4 +35,9 @@ export const DownloadResumeWrapper = styled.button`
     padding: 1rem 0;
     cursor: pointer;
     width: 200px;
+    text-align: center;
+
+    :hover {
+        text-decoration: none;
+    }
 `;

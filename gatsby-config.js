@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `portfolio`,
-    description: `personal web design portfolio website`,
-    author: `ntc`,
+    title: `Neil Carruthers`,
+    description: `personal web design portfolio website of Neil Carruthers`,
+    author: `Neil Carruthers`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `personal portfolio of ntc`,
-        short_name: `ntc portfolio`,
+        name: `Web Design Portfolio of Neil Carruthers`,
+        short_name: `Neil Carruthers`,
         start_url: `/`,
         background_color: `#259662`,
         theme_color: `#259662`,

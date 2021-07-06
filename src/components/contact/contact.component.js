@@ -9,7 +9,7 @@ import {
 
 
 const Contact = () => (
-    <GenericContainer>
+    <GenericContainer id='contact'>
         <GenericHeadingWrapper>Contact Me</GenericHeadingWrapper>
         <GenericListContainer>
             <div style={{alignSelf: 'flex-start'}}>

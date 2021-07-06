@@ -23,25 +23,13 @@ const BodyContainer = styled.div`
 `;
 
 const FooterContainer = styled.footer`
-  margin-top: 2rem;
+  padding: 2rem;
+  font-weight: 700;
 `;
 
-
-
-const Copy = styled.div`
-  margin-top: 1rem;
-`;
 
 const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
+
 
   return (
     <>
@@ -50,11 +38,9 @@ const Layout = ({ children }) => {
       <BodyContainer>
         <main>{children}</main>
         <FooterContainer>
-          <span>Footer</span>
-          <Copy>
+          <div>
             © {new Date().getFullYear()} Neil Carruthers
-          </Copy>
-          <a href='/#top'>Back to Top</a>
+          </div>
         </FooterContainer>
       </BodyContainer>
     </>

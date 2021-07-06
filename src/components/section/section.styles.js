@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SectionWrapper = styled.section`
-    height: ${props => props.height || '85vh' };
+    min-height: 85vh;
     background-color: ${props => props.color || 'white'};
     background-image: url(${props => props.bg ? props.bg.image : '' });
     background-repeat: no-repeat;

@@ -1,8 +1,10 @@
 import React from 'react';
+
 import {
     GenericContainer,
     GenericHeadingWrapper,
-    GenericListContainer
+    GenericListContainer,
+    GenericSquareBorder
 } from '../generic/generic.styles';
 
 
@@ -10,9 +12,18 @@ const MyServices = () => (
     <GenericContainer>
         <GenericHeadingWrapper>Services</GenericHeadingWrapper>
         <GenericListContainer>
-            <div>Web Design</div>
-            <div>UI/UX Design</div>
-            <div>SEO & Marketing</div>
+            <GenericSquareBorder>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </GenericSquareBorder>
+            <GenericSquareBorder>
+                <h4>UI/UX Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </GenericSquareBorder>
+            <GenericSquareBorder>
+                <h4>SEO & Marketing</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </GenericSquareBorder>
         </GenericListContainer>
     </GenericContainer>
 );

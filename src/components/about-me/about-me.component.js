@@ -7,7 +7,7 @@ import {
 } from './about-me.styles';
 
 const AboutMe = () => (
-    <AboutMeContainer>
+    <AboutMeContainer id='about'>
         <HeadingWrapper>About Me</HeadingWrapper>
         <SummaryWrapper>Hello, I'm a freelance hacker</SummaryWrapper>
         <LookingForWrapper>I am looking for work</LookingForWrapper>

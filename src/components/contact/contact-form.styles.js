@@ -4,8 +4,11 @@ import styled, { css } from 'styled-components';
 export const FormContainer = styled.form`
     display: flex;
     flex-flow: column;
-    width: 40vw;
-    margin: 0;
+    width: 50vw;
+    margin-bottom: 3rem;
+    background: #f3f8fc;
+    padding: 2rem;
+    box-shadow: 0 0 12px 3px rgb(235, 235, 235);
 
     label {
         font-size: 1rem;
@@ -18,8 +21,9 @@ export const FormContainer = styled.form`
 
     input, textarea {
         margin: 12px 0;
+        background: white;
         border: none;
-        box-shadow: 5px 10px 12px lightgrey;
+        border-radius: 8px;
     }
 
     textarea {

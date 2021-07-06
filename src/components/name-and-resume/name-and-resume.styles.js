@@ -13,7 +13,7 @@ export const NameWrapper = styled.h1`
     margin-bottom: 0.5rem;
 
     @media screen and (max-width: 800px) {
-        font-size: 2rem;
+        font-size: 36px;
     }
 `;
 

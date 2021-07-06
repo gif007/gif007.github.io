@@ -31,10 +31,10 @@ const IndexPage = () => {
       <Section>
         <MyServices />
       </Section>
-      <Section color='#f3f8fc' height='100vh'>
+      <Section color='#f3f8fc'>
         <Portfolio />
       </Section>
-      <Section height='100vh'>
+      <Section>
         <Contact />
       </Section>
   </Layout>

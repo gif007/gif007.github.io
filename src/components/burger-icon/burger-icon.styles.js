@@ -19,8 +19,11 @@ export const ShortLine = styled.span`
     transition: width 0.2s ease-in-out 0s;
 `;
 
-export const BurgerIconContainer = styled.span`
-    display: block;
+export const BurgerIconContainer = styled.button`
+    border: unset;
+    padding: unset;
+    margin: unset;
+    background: unset;
     height: 20px;
     width: 30px;
     cursor: pointer;

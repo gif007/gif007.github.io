@@ -29,7 +29,7 @@ const ContactForm = () => (
             name='message'
             required
         ></textarea>
-        <ButtonContainer center type='submit' title='Send'>&#10169;</ButtonContainer>
+        <ButtonContainer type='submit' title='Send'>&#10169;</ButtonContainer>
     </FormContainer>
 );
 

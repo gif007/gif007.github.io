@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 
 export const FormContainer = styled.form`
@@ -33,18 +33,16 @@ export const FormContainer = styled.form`
     @media screen and (max-width: 800px) {
         min-width: unset;
         width: 90vw;
+        margin-top: 1.5rem;
+    }
+
+    @media screen and (max-width: 400px) {
+        min-width: unset;
+        width: 300px;
+        margin-top: 1.5rem;
     }
 `;
 
-const checkProps = (props) => {
-    if (props.center) {
-        return css`
-            max-width: 100px;
-            align-self: flex-end;
-            font-size: 1.5rem;
-        `;
-    }
-}
 
 export const ButtonContainer = styled.button`
     font-weight: 700;
@@ -54,6 +52,9 @@ export const ButtonContainer = styled.button`
     padding: 8px;
     border-radius: 50px;
     box-shadow: 5px 10px 12px lightgrey;
+    max-width: 100px;
+    align-self: flex-end;
+    font-size: 1.5rem;
 
     :hover {
         text-decoration: underline;
@@ -63,6 +64,4 @@ export const ButtonContainer = styled.button`
         transform: translate(1px, 2px);
         box-shadow: 2px 3px 4px lightgrey;
     }
-
-    ${checkProps}
 `;

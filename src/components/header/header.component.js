@@ -22,7 +22,7 @@ const Masthead = () => {
                 hidden ? (
                     null
                 ) : (
-                    <BurgerMenu />
+                    <BurgerMenu fn={setHidden} value={hidden} />
                 )
             }
     </HeaderWrapper>

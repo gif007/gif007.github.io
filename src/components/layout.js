@@ -11,7 +11,7 @@ import PropTypes from "prop-types"
 
 // import Header from "./header"
 import Masthead from './header/header.component';
-import "./layout.css" // global styles
+import "./reset.css" // global styles
 import styled from 'styled-components';
 
 

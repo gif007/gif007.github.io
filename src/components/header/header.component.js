@@ -10,13 +10,13 @@ const Masthead = () => {
     
     return (
     <HeaderWrapper>
-        <span id='top'>
+        <a href='/' id='top'>
             <picture>
                 <source media="(max-width: 800px)" srcset={NameLogoSmall} />
                 <source media="(min-width: 801px)" srcset={NameLogoLarge} />
                 <img src={NameLogoLarge} alt='Neil Carruthers'/>
             </picture>
-        </span>
+        </a>
         <BurgerIcon fn={setHidden} value={hidden} />
             {
                 hidden ? (

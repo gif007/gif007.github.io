@@ -1,6 +1,14 @@
 import React from 'react';
 import ContactForm from './contact-form.component';
 import Socials from '../socials/socials.component';
+
+import {
+    AlignTopContainer,
+    InfoList,
+    InfoListItem,
+    HeadingWrapper
+} from './contact.styles';
+
 import {
     GenericContainer,
     GenericHeadingWrapper,
@@ -12,19 +20,19 @@ const Contact = () => (
     <GenericContainer id='contact'>
         <GenericHeadingWrapper>Contact Me</GenericHeadingWrapper>
         <GenericListContainer>
-            <div style={{alignSelf: 'flex-start'}}>
-                <h3>Contact Info</h3>
-                <ul style={{listStyleType: 'none', padding: 0, margin: 0}}>
-                    <li style={{color: 'red', fontWeight: 700}}>Email</li>
-                    <li>carruthers.n.t@gmail.com</li>
-                    <li style={{color: 'red', fontWeight: 700}}>Socials</li>
-                    <li><Socials /></li>
-                </ul>
-            </div>
+            <AlignTopContainer>
+                <HeadingWrapper>Contact Info</HeadingWrapper>
+                <InfoList>
+                    <InfoListItem title={true} >Email</InfoListItem>
+                    <InfoListItem>carruthers.n.t@gmail.com</InfoListItem>
+                    <InfoListItem title={true} >Socials</InfoListItem>
+                    <InfoListItem><Socials /></InfoListItem>
+                </InfoList>
+            </AlignTopContainer>
 
-            <div div style={{alignSelf: 'flex-start'}}>
+            <AlignTopContainer>
                 <ContactForm />
-            </div>
+            </AlignTopContainer>
         </GenericListContainer>
     </GenericContainer>
 );

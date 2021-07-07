@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'gatsby';
+
 import {
     GenericContainer,
     GenericHeadingWrapper,
@@ -10,7 +12,7 @@ const Portfolio = () => (
     <GenericContainer id='portfolio'>
         <GenericHeadingWrapper>Portfolio</GenericHeadingWrapper>
         <GenericListContainer>
-            
+            <Link to='/wedding-template/'>Click me</Link>
         </GenericListContainer>
     </GenericContainer>
 );

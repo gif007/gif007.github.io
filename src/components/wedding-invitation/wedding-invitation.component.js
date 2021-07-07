@@ -1,5 +1,9 @@
 import React from 'react';
-import WeddingPhoto from '../../images/wedding-800x333.png';
+
+import WeddingPhotoLarge from '../../images/wedding-800x333.png';
+import WeddingPhotoMedium from '../../images/wedding-601x250.png';
+import WeddingPhotoSmall from '../../images/wedding-300x125.png';
+import PeonyCorner from '../../images/stolen-peony-45.png';
 
 import {
     InvitationWrapper,
@@ -13,7 +17,7 @@ import {
 
 
 const WeddingInvitation = () => (
-    <InvitationWrapper>
+    <InvitationWrapper bg={PeonyCorner}>
         <HeadingWrapper>Our Wedding</HeadingWrapper>
         <Subtitle>7.24.2022 | San Fransisco Bay Area</Subtitle>
 
@@ -24,7 +28,12 @@ const WeddingInvitation = () => (
             <FauxLink>RSVP</FauxLink>
         </NavBar>
 
-        <BorderRadiusedImage src={WeddingPhoto} alt='' />
+        <picture>
+                <source media="(max-width: 400px" srcset={WeddingPhotoSmall} />
+                <source media="(max-width: 800px)" srcset={WeddingPhotoMedium} />
+                <source media="(min-width: 801px)" srcset={WeddingPhotoLarge} />
+                <BorderRadiusedImage src={WeddingPhotoLarge} alt='' />
+        </picture>
         
         <DetailsContainer>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>

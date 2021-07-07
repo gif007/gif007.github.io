@@ -14,5 +14,6 @@ export const LayoutWrapper = styled.div`
     @media screen and (max-width: 800px) {
         background: unset;
         background-repeat: unset;
+        padding: unset;
     }
 `;

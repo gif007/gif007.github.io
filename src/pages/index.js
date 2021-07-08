@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -16,6 +16,24 @@ import AntImageLeft from '../images/ant-left-125x125.png';
 
 const IndexPage = () => {
 
+  const [areSkillsVisible, setAreSkillsVisible] = useState(false);
+
+  useEffect(() => {
+    const viewportHeight = window.innerHeight;
+    const skillsList = document.querySelector('div#skills-section');
+    const distanceToSkillsList = skillsList.getBoundingClientRect().top;
+    const triggerHeight = distanceToSkillsList - viewportHeight;
+
+    const checkScrollDistance = () => {
+      if (window.pageYOffset >= triggerHeight) {
+          window.removeEventListener('scroll', checkScrollDistance);
+          setAreSkillsVisible(true);
+      }
+    }
+
+      window.addEventListener('scroll', checkScrollDistance);
+  }, [])
+
   return (
   <Layout>
     <Seo title="Home" />
@@ -26,7 +44,7 @@ const IndexPage = () => {
         <AboutMe />
       </Section>
       <Section color='#f3f8fc'>
-        <MySkills />
+        <MySkills areSkillsVisible={areSkillsVisible} />
       </Section>
       <Section>
         <MyServices />

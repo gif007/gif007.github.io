@@ -13,14 +13,30 @@ import {
 } from '../generic/generic.styles';
 
 
-const MySkills = () => (
+const MySkills = ({areSkillsVisible}) => (
     <GenericContainer>
         <GenericHeadingWrapper>My Skills</GenericHeadingWrapper>
-        <GenericListContainer>
-            <SkillMeter text='HTML & CSS' img={NinetyEight} />
-            <SkillMeter text='ES6' img={NinetyOne} />
-            <SkillMeter text='REACT/REDUX' img={EightyFive} />
-            <SkillMeter text='SQL & NoSQL' img={SeventySeven} />
+        <GenericListContainer id='skills-section'>
+            <SkillMeter
+                areSkillsVisible={areSkillsVisible}
+                text='HTML & CSS'
+                img={NinetyEight}
+            />
+            <SkillMeter
+                areSkillsVisible={areSkillsVisible}
+                text='ES6'
+                img={NinetyOne}
+            />
+            <SkillMeter
+                areSkillsVisible={areSkillsVisible}
+                text='REACT/REDUX'
+                img={EightyFive}
+            />
+            <SkillMeter
+                areSkillsVisible={areSkillsVisible}
+                text='SQL & NoSQL'
+                img={SeventySeven}
+            />
         </GenericListContainer>
     </GenericContainer>
 );

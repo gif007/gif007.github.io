@@ -6,9 +6,9 @@ import {
 } from './skill-meter.styles';
 
 
-const SkillMeter = ({img, text}) => (
+const SkillMeter = ({img, text, areSkillsVisible}) => (
     <SkillMeterContainer>
-        <ImageWrapper src={img} alt={text} />
+        <ImageWrapper areSkillsVisible={areSkillsVisible} src={img} alt={text} />
         <TextWrapper>
             {text}
         </TextWrapper>

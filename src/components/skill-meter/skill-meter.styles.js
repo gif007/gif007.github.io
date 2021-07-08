@@ -8,7 +8,8 @@ export const TextWrapper = styled.div`
 `;
 
 export const ImageWrapper = styled.img`
-
+    transition: transform 2s ease-in-out 0s;
+    ${props => props.areSkillsVisible ? 'transform: rotate(360deg)' : null};
 `;
 
 export const SkillMeterContainer = styled.div`

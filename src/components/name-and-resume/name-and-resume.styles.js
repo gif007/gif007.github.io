@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const NameAndResumeContainer = styled.div`
     display: flex;
     flex-direction: column;
+    width: 65%;
+    margin: 0 auto;
 `;
 
 export const NameWrapper = styled.h1`
@@ -13,7 +15,7 @@ export const NameWrapper = styled.h1`
     margin-bottom: 0.5rem;
 
     @media screen and (max-width: 800px) {
-        font-size: 36px;
+        font-size: 52px;
     }
 `;
 

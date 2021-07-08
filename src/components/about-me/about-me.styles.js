@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const AboutMeContainer = styled.div`
     display: flex;
     flex-direction: column;
+    width: 65%;
+    margin: 0 auto;
+    text-align: right;
 `;
 
 export const HeadingWrapper = styled.h1`

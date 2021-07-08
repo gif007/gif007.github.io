@@ -37,10 +37,10 @@ const IndexPage = () => {
   return (
   <Layout>
     <Seo title="Home" />
-      <Section color='#f3f8fc' justify='flex-start' bg={{image: AntImageLeft, position: 'right bottom'}}>
+      <Section color='#f3f8fc' justify='flex-start' bg={{image: AntImageLeft, side: 'right'}}>
         <NameAndResume />
       </Section>
-      <Section justify='flex-end'  bg={{image: AntImageRight, position: 'left bottom'}}>
+      <Section justify='flex-end'  bg={{image: AntImageRight, side: 'left'}}>
         <AboutMe />
       </Section>
       <Section color='#f3f8fc'>

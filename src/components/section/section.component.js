@@ -1,10 +1,19 @@
 import React from 'react';
-import { SectionWrapper } from './section.styles';
+import { SectionWrapper, ImageWrapper } from './section.styles';
 
-const Section = ({children, color, justify, bg}) => {
+const Section = ({children, color, bg}) => {
+
     return (
-        <SectionWrapper color={color} justify={justify} bg={bg}>
+        <SectionWrapper color={color}>
             {children}
+            {
+                bg ? <ImageWrapper
+                        style={{
+                            backgroundImage: `url(${bg.image})`,
+                        }}
+                        side={bg.side}
+                    /> : null
+            }
         </SectionWrapper>
     );
 }

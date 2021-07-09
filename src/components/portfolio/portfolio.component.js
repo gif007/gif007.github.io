@@ -12,7 +12,7 @@ import {
 import { MenuItemContainer, BackgroundImageContainer } from './portfolio.styles';
 
 const Portfolio = () => (
-    <GenericContainer id='portfolio'>
+    <GenericContainer broad id='portfolio'>
         <GenericHeadingWrapper>Portfolio</GenericHeadingWrapper>
         <GenericListContainer>
             <Link to='/wedding-template/'>

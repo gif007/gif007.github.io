@@ -4,7 +4,7 @@ export const GenericContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 65%;
+    width: ${props => props.broad ? '100%' : '75%'};
     height: 70%;
     margin: 0 auto;
 `;
@@ -40,7 +40,7 @@ export const GenericSquareBorder = styled.div`
     margin: 0 1rem;
     transition: all 0.5s ease-in-out 0.1s;
 
-    p {
+    p, h4 {
         text-align: center;
     }
 

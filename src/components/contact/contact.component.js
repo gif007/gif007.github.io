@@ -17,7 +17,7 @@ import {
 
 
 const Contact = () => (
-    <GenericContainer id='contact'>
+    <GenericContainer broad id='contact'>
         <GenericHeadingWrapper>Contact Me</GenericHeadingWrapper>
         <GenericListContainer>
             <AlignTopContainer>

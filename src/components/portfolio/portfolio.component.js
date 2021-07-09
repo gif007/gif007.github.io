@@ -22,6 +22,12 @@ const Portfolio = () => (
                     />
                 </MenuItemContainer>
             </Link>
+
+            <Link to='/test/'>
+                <MenuItemContainer>
+                    Test
+                </MenuItemContainer>
+            </Link>
         </GenericListContainer>
     </GenericContainer>
 );

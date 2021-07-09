@@ -9,19 +9,21 @@ import {
     RightButton
 } from './slider.styles';
 
-const Slider = () => {
 
+const Slider = ({images}) => {
+    // This component only works with exactly 9 images that are 125px on a side
+    // The gutter between images is fixed at 15px
     const [left, setLeft] = useState(15);
 
     const goLeft = () => {
-        if (left >= 155) {
+        if (left >= 15) {
             return;
         }
         setLeft(left + 140);
     }
 
     const goRight = () => {
-        if (left <= -685) {
+        if (left <= -825) {
             return;
         }
         setLeft(left - 140);
@@ -29,20 +31,21 @@ const Slider = () => {
     
     return (
             <SliderWrapper>
-                <LeftButton onClick={goLeft}>Left</LeftButton>
+                <LeftButton left={left} onClick={goLeft}>&#9665;</LeftButton>
                 <SlideShowContainer>
                     <Row left={left}>
-                        <ContentWrapper>Test</ContentWrapper>
-                        <ContentWrapper>Test</ContentWrapper>
-                        <ContentWrapper>Test</ContentWrapper>
-                        <ContentWrapper>Test</ContentWrapper>
-                        <ContentWrapper>Test</ContentWrapper>
-                        <ContentWrapper>Test</ContentWrapper>
-                        <ContentWrapper>Test</ContentWrapper>
+                        {
+                            images.map((monster) => {
+                                return (
+                                    <ContentWrapper>
+                                        <img src={monster} alt='pokemon' />
+                                    </ContentWrapper>
+                                )
+                            })
+                        }
                     </Row>
                 </SlideShowContainer>
-                <RightButton onClick={goRight}>Right</RightButton>
-                <span style={{marginLeft: '16px'}}>{left}px :)</span>
+                <RightButton left={left} onClick={goRight}>&#9655;</RightButton>
             </SliderWrapper>
     )
 };

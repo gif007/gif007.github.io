@@ -5,20 +5,16 @@ export const SlideShowContainer = styled.div`
     position: relative;
     height: 150px;
     width: 435px;
-    border: 1px solid black;
     overflow: hidden;
     display: flex;
     align-items: center;
-    background: yellow;
 `;
 
 export const ContentWrapper = styled.div`
-    border: 1px solid black;
     height: 125px;
     width: 125px;
     flex-shrink: 0;
     margin-right: 15px;
-    background: red;
 `;
 
 export const Row = styled.div`
@@ -33,18 +29,28 @@ const ButtonStyles = css`
     background: unset;
     padding: unset;
     margin: unset;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     cursor: pointer;
+    border: unset;
+    font-size: 40px;
+    line-height: 40px;
+`;
+
+const disabled = css`
+    opacity: .4;
+    cursor: unset;
 `;
 
 export const LeftButton = styled.button`
     ${ButtonStyles};
+    ${props => props.left >= 15 ? disabled : null};
     margin-right: 1rem;
 `;
 
 export const RightButton = styled.button`
     ${ButtonStyles};
+    ${props => props.left <= -825 ? disabled : null};
     margin-left: 1rem;
 `;
 

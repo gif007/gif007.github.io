@@ -7,7 +7,7 @@ import {
     Row,
     ContentWrapper,
     RightButton
-} from './slider.styles';
+} from './three-slider.styles';
 
 
 const ThreeSlider = ({images, gutter, imageWidth, imageHeight}) => {
@@ -34,14 +34,30 @@ const ThreeSlider = ({images, gutter, imageWidth, imageHeight}) => {
     
     return (
             <SliderWrapper>
-                <LeftButton left={left} boundary={leftBoundary} onClick={goLeft}>&#9665;</LeftButton>
-                <SlideShowContainer imageWidth={imageWidth} imageHeight={imageHeight} gutter={gutter}>
+                <LeftButton
+                    left={left}
+                    boundary={leftBoundary}
+                    onClick={goLeft}
+                >
+                    &#9665;
+                </LeftButton>
+
+                <SlideShowContainer
+                    imageWidth={imageWidth}
+                    imageHeight={imageHeight}
+                    gutter={gutter}
+                >
                     <Row left={left}>
                         {
                             images.map((img, index) => {
                                 const altText = `slider image ${index}`
                                 return (
-                                    <ContentWrapper key={index} imageWidth={imageWidth} imageHeight={imageHeight} gutter={gutter}>
+                                    <ContentWrapper
+                                        key={index}
+                                        imageWidth={imageWidth}
+                                        imageHeight={imageHeight}
+                                        gutter={gutter}
+                                    >
                                         <img src={img} alt={altText} />
                                     </ContentWrapper>
                                 )
@@ -49,7 +65,14 @@ const ThreeSlider = ({images, gutter, imageWidth, imageHeight}) => {
                         }
                     </Row>
                 </SlideShowContainer>
-                <RightButton left={left} boundary={rightBoundary} onClick={goRight}>&#9655;</RightButton>
+
+                <RightButton
+                    left={left}
+                    boundary={rightBoundary} 
+                    onClick={goRight}
+                >
+                    &#9655;
+                </RightButton>
             </SliderWrapper>
     )
 };

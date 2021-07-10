@@ -1,6 +1,12 @@
 import styled, { css } from 'styled-components';
 
 
+export const SliderWrapper = styled.div`
+    display: inline-flex;
+    align-items: center;
+    padding: 2rem;
+`;
+
 export const SlideShowContainer = styled.div`
     position: relative;
     height: ${props => `${props.imageHeight}px`};
@@ -53,10 +59,4 @@ export const RightButton = styled.button`
     ${ButtonStyles};
     ${props => props.left <= props.boundary ? disabled : null};
     margin-left: 1rem;
-`;
-
-export const SliderWrapper = styled.div`
-    display: inline-flex;
-    align-items: center;
-    padding: 2rem;
 `;

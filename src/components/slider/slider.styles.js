@@ -3,18 +3,18 @@ import styled, { css } from 'styled-components';
 
 export const SlideShowContainer = styled.div`
     position: relative;
-    height: 150px;
-    width: 435px;
+    height: ${props => `${props.imageHeight}px`};
+    width: ${props => `${(props.gutter * 4) + (props.imageWidth * 3)}px`};
     overflow: hidden;
     display: flex;
     align-items: center;
 `;
 
 export const ContentWrapper = styled.div`
-    height: 125px;
-    width: 125px;
+    height: ${props => `${props.imageHeight}px`};
+    width: ${props => `${props.imageWidth}px`};
     flex-shrink: 0;
-    margin-right: 15px;
+    margin-right: ${props => `${props.gutter}px`};
 `;
 
 export const Row = styled.div`
@@ -35,6 +35,7 @@ const ButtonStyles = css`
     border: unset;
     font-size: 40px;
     line-height: 40px;
+    z-index: 900;
 `;
 
 const disabled = css`
@@ -44,18 +45,18 @@ const disabled = css`
 
 export const LeftButton = styled.button`
     ${ButtonStyles};
-    ${props => props.left >= 15 ? disabled : null};
+    ${props => props.left >= props.boundary ? disabled : null};
     margin-right: 1rem;
 `;
 
 export const RightButton = styled.button`
     ${ButtonStyles};
-    ${props => props.left <= -825 ? disabled : null};
+    ${props => props.left <= props.boundary ? disabled : null};
     margin-left: 1rem;
 `;
 
 export const SliderWrapper = styled.div`
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    padding: 4rem;
+    padding: 2rem;
 `;

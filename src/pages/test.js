@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from '../components/slider/slider.component';
+import ThreeSlider from '../components/slider/slider.component';
 
 import Bulbasaur from '../images/bulbasaur.png';
 import Ivysaur from '../images/ivysaur.png';
@@ -27,7 +27,7 @@ const pokemon = [
 
 
 const Test = () => (
-    <Slider images={pokemon} />
+    <ThreeSlider images={pokemon} gutter={15} imageWidth={125} imageHeight={125} />
 );
 
 export default Test;

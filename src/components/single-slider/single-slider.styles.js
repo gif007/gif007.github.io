@@ -7,7 +7,7 @@ export const SingleSliderContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: ${props => `${props.imageWidth + 45}px`};
-    height: ${props => `${props.imageHeight + 45  }px`};
+    height: ${props => `${props.imageHeight + 45}px`};
     background: 1px solid black;
     overflow: hidden;
 `;
@@ -32,6 +32,7 @@ const ButtonStyles = css`
     z-index: 900;
     opacity: .2;
     transition: opacity .5s ease-in-out 0s;
+    position: absolute;
 
     :hover {
         opacity: 1;
@@ -40,12 +41,10 @@ const ButtonStyles = css`
 
 export const Left = styled.button`
     ${ButtonStyles};
-    position: absolute;
     left: 0;
 `;
 
 export const Right = styled.button`
     ${ButtonStyles};
-    position: absolute;
     right: 0;
 `;

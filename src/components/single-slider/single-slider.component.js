@@ -11,6 +11,8 @@ import {
 const SingleSlider = ({images, imageWidth, imageHeight}) => {
     const [index, setIndex] = useState(0);
 
+    // const numOfImages = images.length;
+
     const goLeft = () => {
         if (index === 0) {
             setIndex(images.length - 1);

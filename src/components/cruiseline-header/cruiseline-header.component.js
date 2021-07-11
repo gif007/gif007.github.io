@@ -8,7 +8,7 @@ import {
     HeaderNavItem
 } from './cruiseline-header.styles';
 
-import CruiselineLogo from '../../images/cruiseline-nobg.png';
+import CruiselineLogo from '../../images/cruiseline/cruiseline-nobg.png';
 
 
 const CruiselineHeader = () => (

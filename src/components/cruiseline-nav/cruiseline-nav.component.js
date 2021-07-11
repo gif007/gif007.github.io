@@ -10,7 +10,7 @@ import {
     SearchGlassWrapper
 } from './cruiseline-nav.styles';
 
-import SearchGlass from '../../images/search-glass.png';
+import SearchGlass from '../../images/cruiseline/search-glass.png';
 
 
 const CruiselineNav = () => (

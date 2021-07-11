@@ -1,9 +1,9 @@
 import React from 'react';
 
-import WeddingPhotoLarge from '../../images/wedding-800x333.png';
-import WeddingPhotoMedium from '../../images/wedding-601x250.png';
-import WeddingPhotoSmall from '../../images/wedding-300x125.png';
-import PeonyCorner from '../../images/stolen-peony-45.png';
+import WeddingPhotoLarge from '../../images/wedding/wedding-800x333.png';
+import WeddingPhotoMedium from '../../images/wedding/wedding-601x250.png';
+import WeddingPhotoSmall from '../../images/wedding/wedding-300x125.png';
+import PeonyCorner from '../../images/wedding/stolen-peony-45.png';
 
 import {
     InvitationWrapper,

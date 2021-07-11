@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import WeddingThumbnail from '../../images/wedding-template-thumb-300x300.png';
+import WeddingThumbnail from '../../images/index/wedding-template-thumb-300x300.png';
 
 import {
     GenericContainer,

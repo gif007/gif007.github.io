@@ -1,10 +1,11 @@
 import React from 'react';
 
 import SkillMeter from '../skill-meter/skill-meter.component';
-import NinetyEight from '../../images/98percent-175x175.png';
-import SeventySeven from '../../images/77percent-175x175.png';
-import EightyFive from '../../images/85percent-175x175.png';
-import NinetyOne from '../../images/91percent-175x175.png';
+
+import NinetyEight from '../../images/index/98percent-175x175.png';
+import SeventySeven from '../../images/index/77percent-175x175.png';
+import EightyFive from '../../images/index/85percent-175x175.png';
+import NinetyOne from '../../images/index/91percent-175x175.png';
 
 import {
     GenericContainer,

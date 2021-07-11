@@ -1,8 +1,8 @@
 import React from 'react';
 import {ImageContainer } from './socials.styles';
 
-import GitHubLogo from '../../images/GitHub-Mark-32px.png';
-import LinkedInLogo from '../../images/LI-In-Bug.png';
+import GitHubLogo from '../../images/socials/GitHub-Mark-32px.png';
+import LinkedInLogo from '../../images/socials/LI-In-Bug.png';
 
 
 

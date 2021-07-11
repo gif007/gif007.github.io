@@ -10,8 +10,8 @@ import MyServices from '../components/my-services/my-services.component';
 import Portfolio from '../components/portfolio/portfolio.component';
 import Contact from '../components/contact/contact.component';
 
-import AntImageRight from '../images/ant-right-125x125.png';
-import AntImageLeft from '../images/ant-left-125x125.png';
+import AntImageRight from '../images/index/ant-right-125x125.png';
+import AntImageLeft from '../images/index/ant-left-125x125.png';
 
 
 const IndexPage = () => {

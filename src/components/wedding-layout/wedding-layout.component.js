@@ -1,7 +1,7 @@
 import React from 'react';
 import '../reset.css';
 import { LayoutWrapper } from './wedding-layout.styles';
-import Peony from '../../images/stolen-peony.png';
+import Peony from '../../images/wedding/stolen-peony.png';
 
 
 const WeddingLayout = ({children}) => (

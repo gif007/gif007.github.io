@@ -1,5 +1,5 @@
 import React from 'react';
-// import '../reset.css';
+import '../reset.css';
 import { LayoutWrapper } from './wedding-layout.styles';
 import Peony from '../../images/stolen-peony.png';
 

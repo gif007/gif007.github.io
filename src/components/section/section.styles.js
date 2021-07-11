@@ -4,7 +4,7 @@ export const SectionWrapper = styled.section`
     position: relative;
     min-height: 70vh;
     background-color: ${props => props.color || 'white'};
-    padding: 0 6rem;
+    ${props => props.padded ? `padding: 0 6rem`: null};
     display: flex;
     align-items: center;
 

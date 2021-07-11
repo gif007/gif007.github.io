@@ -12,7 +12,7 @@ export const MenuItemContainer = styled.div`
     width: 300px;
     height: 300px;
     border: 1px solid black;
-    margin: 0 7.5px 15px;
+    margin: 0 3px 15px;
     overflow: hidden;
 
     &:hover {
@@ -21,4 +21,11 @@ export const MenuItemContainer = styled.div`
             transform: scale(1.1);
             transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
         }
+`;
+
+export const PortfolioGrid = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 `;

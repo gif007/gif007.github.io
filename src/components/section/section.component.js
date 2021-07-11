@@ -1,10 +1,10 @@
 import React from 'react';
 import { SectionWrapper, ImageWrapper } from './section.styles';
 
-const Section = ({children, color, bg}) => {
+const Section = ({children, color, bg, padded}) => {
 
     return (
-        <SectionWrapper color={color}>
+        <SectionWrapper color={color} padded={padded}>
             {children}
             {
                 bg ? <ImageWrapper

@@ -5,16 +5,20 @@ import WeddingThumbnail from '../../images/wedding-template-thumb-300x300.png';
 
 import {
     GenericContainer,
-    GenericHeadingWrapper,
-    GenericListContainer
+    GenericHeadingWrapper
 } from '../generic/generic.styles';
 
-import { MenuItemContainer, BackgroundImageContainer } from './portfolio.styles';
+import {
+    MenuItemContainer,
+    BackgroundImageContainer,
+    PortfolioGrid
+} from './portfolio.styles';
 
 const Portfolio = () => (
     <GenericContainer broad id='portfolio'>
         <GenericHeadingWrapper>Portfolio</GenericHeadingWrapper>
-        <GenericListContainer>
+        <PortfolioGrid>
+            
             <Link to='/wedding-template/'>
                 <MenuItemContainer>
                     <BackgroundImageContainer
@@ -28,7 +32,14 @@ const Portfolio = () => (
                     Test
                 </MenuItemContainer>
             </Link>
-        </GenericListContainer>
+
+            <Link to='/cruiseline-template/'>
+                <MenuItemContainer>
+                    Cruiseline
+                </MenuItemContainer>
+            </Link>
+
+        </PortfolioGrid>
     </GenericContainer>
 );
 

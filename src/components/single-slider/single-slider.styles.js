@@ -10,6 +10,7 @@ export const SingleSliderContainer = styled.div`
     height: ${props => `${props.imageHeight + 45}px`};
     background: 1px solid black;
     overflow: hidden;
+    margin: 2rem;
 `;
 
 export const BackgroundImage = styled.div`
@@ -47,4 +48,18 @@ export const Left = styled.button`
 export const Right = styled.button`
     ${ButtonStyles};
     right: 0;
+`;
+
+export const DotsContainer = styled.div`
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+`;
+
+export const Dot = styled.span`
+    font-size: 21px;
+    cursor: pointer;
 `;

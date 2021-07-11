@@ -52,7 +52,7 @@ const IndexPage = () => {
       <Section color='#f3f8fc'>
         <Portfolio />
       </Section>
-      <Section>
+      <Section padded>
         <Contact />
       </Section>
   </Layout>

@@ -4,14 +4,15 @@ import {
     SingleSliderContainer,
     Left,
     BackgroundImage,
-    Right
+    Right,
+    DotsContainer,
+    Dot
 } from './single-slider.styles';
 
 
 const SingleSlider = ({images, imageWidth, imageHeight}) => {
+    
     const [index, setIndex] = useState(0);
-
-    // const numOfImages = images.length;
 
     const goLeft = () => {
         if (index === 0) {
@@ -40,6 +41,20 @@ const SingleSlider = ({images, imageWidth, imageHeight}) => {
             imageWidth={imageWidth}
             imageHeight={imageHeight}
         />
+        <DotsContainer>
+            {
+                images.map((img, i) => {
+                    const handleOnClick = (n) => {
+                        setIndex(n);
+                    }
+
+                    if (index === i) {
+                        return <Dot key={i} onClick={() => handleOnClick(i)}>&#9679;</Dot>
+                    }
+                    return <Dot key={i} onClick={() => handleOnClick(i)}>&#9675;</Dot>
+                })
+            }
+        </DotsContainer>
         <Right onClick={goRight}>&#9655;</Right>
     </SingleSliderContainer>  
 )};

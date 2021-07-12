@@ -3,7 +3,9 @@ import React from 'react';
 import {
     TimeoutContainer,
     TextWrapper,
-    TimeoutWrapper
+    TimeoutWrapper,
+    ButtonWrapper,
+    ArrowWrapper
 } from './cruiseline-timeout.styles';
 
 import Timeout from '../timeout/timeout.component';
@@ -11,11 +13,12 @@ import Timeout from '../timeout/timeout.component';
 
 const CruiselineTimeout = () => (
     <TimeoutContainer>
-        <TextWrapper alignment='right'>HURRY ONLY</TextWrapper>
+        <TextWrapper>ONLY</TextWrapper>
         <TimeoutWrapper>
             <Timeout />
         </TimeoutWrapper>
-        <TextWrapper alignment='left'>LEFT</TextWrapper>
+        <TextWrapper>LEFT</TextWrapper>
+        <ButtonWrapper type='button'>ENDS SOON <ArrowWrapper>&#9657;</ArrowWrapper></ButtonWrapper>
     </TimeoutContainer>
 );
 

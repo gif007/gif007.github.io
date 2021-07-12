@@ -1,20 +1,24 @@
 import React from 'react';
 
 import {
-    HeroWrapper
+    HeroWrapper,
+    TravelDetails,
+    TravelDetailButton
 } from './cruiseline-hero.styles';
+
+import Beach from '../../images/cruiseline/beach.png';
 
 
 const CruiselineHero = () => (
-    <HeroWrapper>
+    <HeroWrapper style={{backgroundImage: `url(${Beach})`}}>
         <div />
-        <div id='bottomCenter'>
-            <span>sail to</span>
-            <span>sail from</span>
-            <span>date</span>
-            <span>duration</span>
-            <span>search</span>
-        </div>
+        <TravelDetails>
+            <TravelDetailButton>SAIL TO &#9662;</TravelDetailButton>
+            <TravelDetailButton>SAIL FROM &#9662;</TravelDetailButton>
+            <TravelDetailButton>DATE &#9662;</TravelDetailButton>
+            <TravelDetailButton>DURATION &#9662;</TravelDetailButton>
+            <TravelDetailButton bigRed>SEARCH</TravelDetailButton>
+        </TravelDetails>
     </HeroWrapper>
 );
 

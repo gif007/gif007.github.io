@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 import {
-
+    TimeoutWrapper,
+    TimeoutItem
 } from './timeout.styles';
 
 
@@ -40,11 +41,11 @@ const Timeout = () => {
     })
 
     return (
-        <div style={{color: 'white', fontWeight: 700, margin: '0 24px', fontSize: '24px'}}>
-            <span>{msToTime(delta).hours}:</span>
-            <span>{msToTime(delta).minutes}:</span>
-            <span>{msToTime(delta).seconds}</span>
-        </div>
+        <TimeoutWrapper>
+            <TimeoutItem>{msToTime(delta).hours}:</TimeoutItem>
+            <TimeoutItem>{msToTime(delta).minutes}:</TimeoutItem>
+            <TimeoutItem>{msToTime(delta).seconds}</TimeoutItem>
+        </TimeoutWrapper>
     );
 }
 

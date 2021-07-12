@@ -11,11 +11,11 @@ import Timeout from '../timeout/timeout.component';
 
 const CruiselineTimeout = () => (
     <TimeoutContainer>
-        <TextWrapper>HURRY ONLY</TextWrapper>
+        <TextWrapper alignment='right'>HURRY ONLY</TextWrapper>
         <TimeoutWrapper>
             <Timeout />
         </TimeoutWrapper>
-        <TextWrapper>LEFT</TextWrapper>
+        <TextWrapper alignment='left'>LEFT</TextWrapper>
     </TimeoutContainer>
 );
 

@@ -17,7 +17,6 @@ export const TravelDetails = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(16, 85, 154);
     background: white;
     padding: 16px;
 

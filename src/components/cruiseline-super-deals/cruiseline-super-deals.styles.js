@@ -11,7 +11,7 @@ export const Row = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 16px 0;
+    margin: 10px 0;
 
     div + div {
         margin-left: 8px;
@@ -19,7 +19,7 @@ export const Row = styled.div`
 `;
 
 export const Deal = styled.div`
-    height: ${props => props.featured? `220px`: `inherit`};
+    height: ${props => props.featured? `300px`: `inherit`};
     flex: 1;
     display: flex;
     align-items: center;
@@ -50,5 +50,17 @@ export const Discount = styled.div`
 `;
 
 export const ButtonWrapper = styled.button`
+    background: rgb(255, 51, 51);
+    color: white;
+    font-size: 16px;
+    border: unset;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: 700;
 
+    :hover {
+        cursor: pointer;
+        background: white;
+        color: rgb(255, 51, 51);
+    }
 `;

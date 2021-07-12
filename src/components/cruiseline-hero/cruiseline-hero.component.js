@@ -6,7 +6,7 @@ import {
     TravelDetailButton
 } from './cruiseline-hero.styles';
 
-import Beach from '../../images/cruiseline/beach.png';
+import Beach from '../../images/cruiseline/running-into-water.png';
 
 
 const CruiselineHero = () => (

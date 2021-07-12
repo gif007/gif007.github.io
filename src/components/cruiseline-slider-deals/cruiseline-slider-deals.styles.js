@@ -7,5 +7,17 @@ export const SliderDealsWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 150px;
+    height: 500px;
+`;
+
+export const SliderWrapper = styled.div`
+    border: 1px solid black;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const ButtonWrapper = styled.button`
+
 `;

@@ -12,6 +12,7 @@ import {
 
 import WaterLeft from '../../images/cruiseline/water-left.png';
 import WaterRight from '../../images/cruiseline/water-right.png';
+import Beach from '../../images/cruiseline/small-island.png';
 
 
 const CruiselineSuperDeals = () => (
@@ -34,7 +35,11 @@ const CruiselineSuperDeals = () => (
                 <Discount>UP TO 40% OFF CRUISE RATES</Discount>
             </Deal>
         </Row>
-        <Deal featured>
+        <Deal
+            color='rgb(5, 31, 73)'
+            featured
+            style={{backgroundImage: `url(${Beach})`}}
+        >
             <Title>SMILE AND GET AWAY TO HALF MOON CAY</Title>
             <Subtitle>A PRIVATE ISLAND PARADISE</Subtitle>
             <ButtonWrapper>LEARN MORE &#9657;</ButtonWrapper>

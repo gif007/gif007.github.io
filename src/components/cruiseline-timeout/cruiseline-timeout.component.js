@@ -15,7 +15,7 @@ const CruiselineTimeout = () => (
     <TimeoutContainer>
         <TextWrapper>ONLY</TextWrapper>
         <TimeoutWrapper>
-            <Timeout />
+            <Timeout deltaInHours={12} />
         </TimeoutWrapper>
         <TextWrapper>LEFT</TextWrapper>
         <ButtonWrapper type='button'>ENDS SOON <ArrowWrapper>&#9657;</ArrowWrapper></ButtonWrapper>

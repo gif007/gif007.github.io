@@ -3,7 +3,7 @@ import '../reset.css';
 import Seo from '../seo';
 
 import { LayoutWrapper } from './wedding-layout.styles';
-import Peony from '../../images/wedding/stolen-peony.png';
+import Peony from '../../images/wedding/peony.png';
 
 
 const WeddingLayout = ({children}) => (

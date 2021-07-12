@@ -6,20 +6,10 @@ import {
 } from './timeout.styles';
 
 
-const Timeout = () => {
+const Timeout = ({deltaInHours}) => {
 
-    const dateNow = new Date();
+    const initialDelta = deltaInHours * 3600000;
 
-    const dateLater = new Date(
-            dateNow.getFullYear(),
-            dateNow.getMonth(),
-            dateNow.getDay(),
-            dateNow.getHours() + 12,
-            dateNow.getMinutes(),
-            dateNow.getSeconds()
-        );
-
-    const initialDelta = Math.abs(dateNow - dateLater);
     const [delta, setDelta] = useState(initialDelta);
 
     const msToTime = (duration) => {

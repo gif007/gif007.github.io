@@ -10,11 +10,11 @@ import {
 } from './three-slider.styles';
 
 
-const ThreeSlider = ({images, gutter, imageWidth, imageHeight}) => {
-    // Images must come in multiples of 3
-    const gutterAndWidth = gutter + imageWidth;
+const ThreeSlider = ({gutter, componentWidth, componentHeight, children}) => {
+    // Images must come in multiples of 3 for rightBoundary to work properly
+    const gutterAndWidth = gutter + componentWidth;
     const leftBoundary = gutter;
-    const rightBoundary = gutterAndWidth - ((images.length - 3) * gutterAndWidth);
+    const rightBoundary = gutterAndWidth - ((children.length - 3) * gutterAndWidth);
 
     const [left, setLeft] = useState(gutter);
 
@@ -31,6 +31,7 @@ const ThreeSlider = ({images, gutter, imageWidth, imageHeight}) => {
         }
         setLeft(left - gutterAndWidth);
     }
+
     
     return (
             <SliderWrapper>
@@ -43,22 +44,22 @@ const ThreeSlider = ({images, gutter, imageWidth, imageHeight}) => {
                 </LeftButton>
 
                 <SlideShowContainer
-                    imageWidth={imageWidth}
-                    imageHeight={imageHeight}
+                    componentWidth={componentWidth}
+                    componentHeight={componentHeight}
                     gutter={gutter}
                 >
                     <Row left={left}>
                         {
-                            images.map((img, index) => {
-                                const altText = `slider image ${index}`
+                            children.map((child, index) => {
+
                                 return (
                                     <ContentWrapper
                                         key={index}
-                                        imageWidth={imageWidth}
-                                        imageHeight={imageHeight}
+                                        componentWidth={componentWidth}
+                                        componentHeight={componentHeight}
                                         gutter={gutter}
                                     >
-                                        <img src={img} alt={altText} />
+                                        {child}
                                     </ContentWrapper>
                                 )
                             })

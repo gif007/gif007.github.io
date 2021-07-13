@@ -4,21 +4,20 @@ import styled, { css } from 'styled-components';
 export const SliderWrapper = styled.div`
     display: inline-flex;
     align-items: center;
-    padding: 2rem;
 `;
 
 export const SlideShowContainer = styled.div`
     position: relative;
-    height: ${props => `${props.imageHeight}px`};
-    width: ${props => `${(props.gutter * 4) + (props.imageWidth * 3)}px`};
+    height: ${props => `${props.componentHeight}px`};
+    width: ${props => `${(props.gutter * 4) + (props.componentWidth * 3)}px`};
     overflow: hidden;
     display: flex;
     align-items: center;
 `;
 
 export const ContentWrapper = styled.div`
-    height: ${props => `${props.imageHeight}px`};
-    width: ${props => `${props.imageWidth}px`};
+    height: ${props => `${props.componentHeight}px`};
+    width: ${props => `${props.componentWidth}px`};
     flex-shrink: 0;
     margin-right: ${props => `${props.gutter}px`};
 `;
@@ -52,11 +51,11 @@ const disabled = css`
 export const LeftButton = styled.button`
     ${ButtonStyles};
     ${props => props.left >= props.boundary ? disabled : null};
-    margin-right: 1rem;
+    margin-right: 2px;
 `;
 
 export const RightButton = styled.button`
     ${ButtonStyles};
     ${props => props.left <= props.boundary ? disabled : null};
-    margin-left: 1rem;
+    margin-left: 2px;
 `;

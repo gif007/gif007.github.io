@@ -30,7 +30,11 @@ const pokemon = [
 
 const Test = () => (
     <>
-        <ThreeSlider images={pokemon} gutter={15} imageWidth={125} imageHeight={125} />
+        <ThreeSlider gutter={15} componentWidth={125} componentHeight={125}>
+            {
+                pokemon.map((img, index) => <img key={index} src={img} alt='pokemon' />)
+            }
+        </ThreeSlider>
         <SingleSlider images={pokemon} imageWidth={125} imageHeight={125} />
     </>
 );

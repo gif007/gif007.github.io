@@ -8,12 +8,17 @@ export const LoginReminderWrapper = styled.div`
     justify-content: center;
     height: 100px;
     margin-bottom: 36px;
+<<<<<<< HEAD
 
     @media screen and (max-width: 420px) {
         width: 80%;
     }
 `;
 
+=======
+`;
+
+>>>>>>> ad85040ac3fffde90133412067a2508a6ca519c1
 export const TextWrapper = styled.div`
     color: rgb(0, 82, 153);
     font-size: 18px;

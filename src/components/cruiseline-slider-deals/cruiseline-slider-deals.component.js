@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import {
     SliderDealsWrapper,
@@ -16,8 +16,11 @@ import DealCard from '../cruiseline-deal-card/cruiseline-deal-card.component';
 
 const CruiselineSliderDeals = () => {
 
-    console.log(window.innerWidth);
-    const isMobile = window.innerWidth <= 800 ? true : false;
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        setIsMobile(window.innerWidth <= 800 ? true : false);
+    }, [])
 
     return (
         <SliderDealsWrapper>

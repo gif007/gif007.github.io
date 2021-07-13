@@ -3,27 +3,27 @@ import React, { useState } from 'react';
 import {
     SingleSliderContainer,
     Left,
-    BackgroundImage,
+    ContentWrapper,
     Right,
     DotsContainer,
     Dot
 } from './single-slider.styles';
 
 
-const SingleSlider = ({images, imageWidth, imageHeight}) => {
+const SingleSlider = ({children, componentWidth, componentHeight}) => {
     
     const [index, setIndex] = useState(0);
 
     const goLeft = () => {
         if (index === 0) {
-            setIndex(images.length - 1);
+            setIndex(children.length - 1);
             return;
         }
         setIndex(index - 1);
     }
 
     const goRight = () => {
-        if (index === images.length - 1) {
+        if (index === children.length - 1) {
             setIndex(0);
             return;
         }
@@ -32,18 +32,19 @@ const SingleSlider = ({images, imageWidth, imageHeight}) => {
 
     return (
     <SingleSliderContainer
-        imageWidth={imageWidth}
-        imageHeight={imageHeight}
+        componentWidth={componentWidth}
+        componentHeight={componentHeight}
     >
         <Left onClick={goLeft}>&#9665;</Left>
-        <BackgroundImage
-            style={{backgroundImage: `url(${images[index]})`}}
-            imageWidth={imageWidth}
-            imageHeight={imageHeight}
-        />
+        <ContentWrapper
+            componentWidth={componentWidth}
+            componentHeight={componentHeight}
+        >
+            {children[index]}
+        </ContentWrapper>
         <DotsContainer>
             {
-                images.map((img, i) => {
+                children.map((child, i) => {
                     const handleOnClick = (n) => {
                         setIndex(n);
                     }

@@ -7,6 +7,10 @@ export const HeaderWrapper = styled.div`
     align-items: center;
     justify-content: center;
     height: 60px;
+
+    @media screen and (max-width: 420px) {
+        height: 80px;
+    }
 `;
 
 export const InnerWrapper = styled.div`
@@ -15,6 +19,11 @@ export const InnerWrapper = styled.div`
     align-items: center;
     height: 100%;
     width: 75%;
+
+    @media screen and (max-width: 420px) {
+        width: 90%;
+        flex-direction: column;
+    }
 `;
 
 export const LogoWrapper = styled.div`
@@ -51,5 +60,11 @@ export const HeaderNavItem = styled.span`
 
     :hover {
         text-decoration: underline;
+    }
+
+    @media screen and (max-width: 420px) {
+        margin-bottom: 4px;
+        flex: 1;
+        padding: 0 4px;
     }
 `;

@@ -23,6 +23,14 @@ export const TravelDetails = styled.div`
     button + button {
         margin-left: 8px;
     }
+
+    @media screen and (max-width: 800px) {
+        padding: 12px;
+    }
+
+    @media screen and (max-width: 420px) {
+        padding: 4px;
+    }
 `;
 
 const checkProps = (props) => {
@@ -46,6 +54,14 @@ export const TravelDetailButton = styled.button`
     justify-content: center;
     font-size: 14px;
     font-weight: 700;
+
+    @media screen and (max-width: 800px) {
+        padding: 0 24px;
+    }
+
+    @media screen and (max-width: 420px) {
+        padding: 0 4px;
+    }
     
     :hover {
         cursor: pointer;

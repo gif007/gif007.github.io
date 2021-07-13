@@ -13,8 +13,14 @@ export const Row = styled.div`
     justify-content: center;
     margin: 10px 0;
 
-    div + div {
-        margin-left: 8px;
+    @media screen and (min-width: 420px) {
+        div + div {
+            margin-left: 8px;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        margin: 10px 0 0 0;
     }
 `;
 
@@ -37,16 +43,31 @@ export const Deal = styled.div`
 export const Title = styled.h2`
     font-size: 24px;
     margin: 0 0 12px 0;
+
+    @media screen and (max-width: 420px) {
+        font-size: 18px;
+        text-align: center;
+    }
 `;
 
 export const Subtitle = styled.h3`
     font-size: 21px;
     margin: 0 0 21px 0;
+
+    @media screen and (max-width: 420px) {
+        font-size: 16px;
+        text-align: center;
+    }
 `;
 
 export const Discount = styled.div`
     font-size: 21px;
     font-weight: 700;
+
+    @media screen and (max-width: 420px) {
+        font-size: 14px;
+        text-align: center;
+    }
 `;
 
 export const ButtonWrapper = styled.button`

@@ -17,11 +17,19 @@ export const TextWrapper = styled.h2`
     color: white;
     font-family: "Open-sans", sans-serif;
     flex-grow: 0;
+
+    @media screen and (max-width: 420px) {
+        font-size: 16px;
+    }
 `;
 
 export const TimeoutWrapper = styled.div`
     flex-grow: 0;
     margin: 0 24px;
+
+    @media screen and (max-width: 420px) {
+        margin: 0 12px;
+    }
 `;
 
 export const ButtonWrapper = styled.button`

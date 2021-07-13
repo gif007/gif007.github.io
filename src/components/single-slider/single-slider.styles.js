@@ -6,18 +6,16 @@ export const SingleSliderContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: ${props => `${props.imageWidth + 45}px`};
-    height: ${props => `${props.imageHeight + 45}px`};
+    width: ${props => `${props.componentWidth + 45}px`};
+    height: ${props => `${props.componentHeight + 45}px`};
     background: 1px solid black;
     overflow: hidden;
     margin: 2rem;
 `;
 
-export const BackgroundImage = styled.div`
-    width: ${props => `${props.imageWidth}px`};
-    height: ${props => `${props.imageHeight}px`};
-    background-position: center;
-    background-size: cover;
+export const ContentWrapper = styled.div`
+    width: ${props => `${props.componentWidth}px`};
+    height: ${props => `${props.componentHeight}px`};
 `;
 
 const ButtonStyles = css`

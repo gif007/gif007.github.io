@@ -9,6 +9,10 @@ export const NavContainer = styled.div`
     height: 50px;
     background: rgb(16, 85, 154);
     color: white;
+
+    @media screen and (max-width: 420px) {
+        height: 90px;
+    }
 `;
 
 export const InnerWrapper = styled.div`
@@ -17,6 +21,10 @@ export const InnerWrapper = styled.div`
     align-items: center;
     height: 100%;
     width: 75%;
+
+    @media screen and (max-width: 420px) {
+        flex-direction: column;
+    }
 `;
 
 export const NavWrapper = styled.nav`
@@ -27,6 +35,7 @@ export const NavWrapper = styled.nav`
 export const NavItem = styled.div`
     cursor: pointer;
     border-left: 1px solid rgba(0, 0, 0, .3);
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
     padding: 0 32px;
     display: flex;
     align-items: center;
@@ -71,4 +80,8 @@ export const SearchGlassWrapper = styled.span`
     justify-content: center;
     border-left: 1px solid rgba(0, 0, 0, .3);
     padding: 0 32px;
+
+    @media screen and (max-width: 420px) {
+        border: none;
+    }
 `;

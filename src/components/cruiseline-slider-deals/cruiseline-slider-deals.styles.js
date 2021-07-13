@@ -8,6 +8,11 @@ export const SliderDealsWrapper = styled.div`
     justify-content: space-around;
     height: 600px;
     flex-direction: column;
+
+    @media screen and (max-width: 800px) {
+        height: unset;
+        padding: 16px 0;
+    }
 `;
 
 export const HeadingWrapper = styled.h2`
@@ -17,6 +22,10 @@ export const HeadingWrapper = styled.h2`
     font-size: 28px;
     font-weight: 700;
     padding-top: 6px;
+
+    @media screen and (max-width: 800px) {
+        text-align: center;
+    }
 `;
 
 export const SliderWrapper = styled.div`
@@ -24,6 +33,11 @@ export const SliderWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        height: unset;
+    }
 `;
 
 export const ButtonWrapper = styled.button`
@@ -37,7 +51,15 @@ export const ButtonWrapper = styled.button`
     padding: 0 24px;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 12px;
+
+    @media screen and (max-width: 800px) {
+        height: 150px;
+        width: 70vw;
+        margin: unset;
+
+    }
 
     :hover {
         cursor: pointer;
@@ -47,60 +69,4 @@ export const ButtonWrapper = styled.button`
 export const ArrowWrapper = styled.span`
     font-size: 14px;
     margin-left: 6px;
-`;
-
-export const DealCard = styled.div`
-    height: 450px;
-    width: 300px;    
-    overflow-x: hidden;
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
-    border-bottom: 1px solid grey;
-
-    :hover { 
-        cursor: pointer;
-    }
-`;
-
-export const DetailsWrapper = styled.div`
-    width: 100%;
-    padding: 0 6px;
-    
-`;
-
-export const TitleWrapper = styled.h2`
-    font-size: 21px;
-    font-weight: 700;
-    margin-bottom: 48px;
-`;
-
-export const DurationWrapper = styled.div`
-    font-size: 14px;
-    font-weight: 700;
-    margin: 12px 0 6px 0;
-`;
-
-export const PriceWrapper = styled.div`
-    font-size: 28px;
-    font-weight: 700;
-    margin: 6px 0;
-`;
-
-export const DealButton = styled.button`
-    background: rgb(255, 51, 51);
-    border: unset;
-    border-radius: 6px;
-    width: 100%;
-    font-weight: 700;
-    color: white;
-    padding: 12px 0;
-    margin-top: 6px;
-
-    :hover {
-    cursor: pointer;
-    }
-`;
-
-export const TextWrapper = styled.div`
-    font-size: 12px;
 `;

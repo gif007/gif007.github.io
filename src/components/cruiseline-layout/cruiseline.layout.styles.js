@@ -5,6 +5,7 @@ export const CruiselineLayoutContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 `;
 
 export const FooterWrapper = styled.div`

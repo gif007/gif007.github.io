@@ -18,6 +18,7 @@ import styled from 'styled-components';
 const BodyContainer = styled.div`
   margin: 0 auto;
   padding: 0;
+  overflow-x: hidden;
 `;
 
 const FooterContainer = styled.footer`

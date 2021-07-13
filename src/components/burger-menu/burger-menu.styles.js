@@ -10,6 +10,7 @@ export const BurgerMenuContainer = styled.div`
     width: 300px;
     background: white;
     box-shadow: 2px 2px 2px 3px rgb(220, 220, 220);
+    z-index: 1030;
 
     @media screen and (max-width: 800px) {
         box-shadow: unset;

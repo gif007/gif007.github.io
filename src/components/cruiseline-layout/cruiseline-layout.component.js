@@ -18,7 +18,7 @@ const CruiselineLayout = ({children}) => (
         <CruiselineNav />
         {children}
         <FooterWrapper>
-            <div>Muh footer</div>
+
         </FooterWrapper>
         
     </CruiselineLayoutContainer>

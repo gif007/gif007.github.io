@@ -2,17 +2,17 @@ import styled from 'styled-components';
 
 
 export const CruiselineLayoutContainer = styled.div`
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
 `;
 
 export const FooterWrapper = styled.div`
-    border: 1px dotted black;
     width: 100%;
     height: 400px;
+    color: rgb(0, 82, 153);
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgb(227, 242, 255);
 `;

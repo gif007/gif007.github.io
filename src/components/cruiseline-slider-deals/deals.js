@@ -5,14 +5,6 @@ import LongBeach from '../../images/cruiseline/slider-images/long-beach.png';
 import RelaxingWithBook from '../../images/cruiseline/slider-images/relaxing-with-book.png';
 import StrawUmbrella from '../../images/cruiseline/slider-images/straw-umbrella.png';
 
-const images = [
-    Beach,
-    CliffCity,
-    JumpingInWater,
-    LongBeach,
-    RelaxingWithBook,
-    StrawUmbrella
-];
 
 const components = [
     {

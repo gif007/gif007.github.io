@@ -1,14 +1,16 @@
 import React from 'react';
 
 import {
-    LoginReminderWrapper
+    LoginReminderWrapper,
+    TextWrapper,
+    ButtonWrapper
 } from './cruiseline-login-reminder.styles';
 
 
 const CruiselineLoginReminder = () => (
     <LoginReminderWrapper>
-        <div>Log in for more great deals!</div>
-        <button>Login</button>
+        <TextWrapper>Log in for more great deals</TextWrapper>
+        <ButtonWrapper>LOG IN</ButtonWrapper>
     </LoginReminderWrapper>
 );
 

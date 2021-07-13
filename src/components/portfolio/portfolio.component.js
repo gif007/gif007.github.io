@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import WeddingThumbnail from '../../images/index/wedding-template-thumb-300x300.png';
+import CruiselineThumbnail from '../../images/index/cruiseline-template-thumb-300x300.png';
 
 import {
     GenericContainer,
@@ -27,15 +28,11 @@ const Portfolio = () => (
                 </MenuItemContainer>
             </Link>
 
-            <Link to='/test/'>
-                <MenuItemContainer>
-                    Test
-                </MenuItemContainer>
-            </Link>
-
             <Link to='/cruiseline-template/'>
                 <MenuItemContainer>
-                    Cruiseline
+                    <BackgroundImageContainer
+                        style={{backgroundImage: `url(${CruiselineThumbnail})`}}
+                    />
                 </MenuItemContainer>
             </Link>
 

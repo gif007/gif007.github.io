@@ -5,8 +5,9 @@ export const GenericContainer = styled.div`
     justify-content: center;
     flex-direction: column;
     width: ${props => props.broad ? '100%' : '75%'};
-    height: 70%;
+    max-height: 70%;
     margin: 0 auto;
+    padding: 36px 0;
 `;
 
 export const GenericHeadingWrapper = styled.h1`
@@ -34,7 +35,7 @@ export const GenericSquareBorder = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0.5px 3rem;
+    padding: 1rem 3rem;
     box-shadow: 0 0 4px 1px rgba(0, 0, 255, .2);
     max-width: 25vw;
     margin: 0 1rem;

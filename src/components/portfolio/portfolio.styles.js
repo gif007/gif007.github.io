@@ -11,21 +11,30 @@ export const BackgroundImageContainer = styled.div`
 export const MenuItemContainer = styled.div`
     width: 300px;
     height: 300px;
-    border: 1px solid black;
-    margin: 0 3px 15px;
+    border: 1px solid lightgrey;
     overflow: hidden;
 
-    &:hover {
+    @media screen and (max-width: 800px) {
+        margin-bottom: 1rem;
+    }
 
+    &:hover {
         & ${BackgroundImageContainer} {
             transform: scale(1.1);
             transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
         }
+    }
 `;
 
 export const PortfolioGrid = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 700px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
 `;

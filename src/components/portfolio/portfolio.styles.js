@@ -31,7 +31,7 @@ export const PortfolioGrid = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 700px;
+    width: 1000px;
     margin: 0 auto;
 
     @media screen and (max-width: 800px) {

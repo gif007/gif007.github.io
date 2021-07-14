@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 
 import WeddingThumbnail from '../../images/index/wedding-template-thumb-300x300.png';
 import CruiselineThumbnail from '../../images/index/cruiseline-template-thumb-300x300.png';
+import CrwnClothing from '../../images/index/crwn-clothing-website-thumb-300x300.png';
 
 import {
     GenericContainer,
@@ -19,11 +20,11 @@ const Portfolio = () => (
     <GenericContainer broad id='portfolio'>
         <GenericHeadingWrapper>Portfolio</GenericHeadingWrapper>
         <PortfolioGrid>
-            
-            <Link to='/wedding-template/'>
+
+            <Link to='https://crwn-clothing-ns.herokuapp.com/'>
                 <MenuItemContainer>
                     <BackgroundImageContainer
-                        style={{backgroundImage: `url(${WeddingThumbnail}`}}
+                        style={{backgroundImage: `url(${CrwnClothing}`}}
                     />
                 </MenuItemContainer>
             </Link>
@@ -32,6 +33,14 @@ const Portfolio = () => (
                 <MenuItemContainer>
                     <BackgroundImageContainer
                         style={{backgroundImage: `url(${CruiselineThumbnail})`}}
+                    />
+                </MenuItemContainer>
+            </Link>
+
+            <Link to='/wedding-template/'>
+                <MenuItemContainer>
+                    <BackgroundImageContainer
+                        style={{backgroundImage: `url(${WeddingThumbnail}`}}
                     />
                 </MenuItemContainer>
             </Link>

@@ -35,10 +35,12 @@ export const GenericSquareBorder = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem 3rem;
+    padding: 1rem;
     box-shadow: 0 0 4px 1px rgba(0, 0, 255, .2);
-    max-width: 25vw;
     margin: 0 1rem;
+    flex: 1;
+    height: 200px;
+    line-height: 1.2rem;
     transition: all 0.5s ease-in-out 0.1s;
 
     p, h4 {

@@ -7,22 +7,24 @@ import {
     GenericSquareBorder
 } from '../generic/generic.styles';
 
+import { ServiceTitleWrapper } from './my-services.styles';
+
 
 const MyServices = () => (
     <GenericContainer>
         <GenericHeadingWrapper>Services</GenericHeadingWrapper>
         <GenericListContainer>
             <GenericSquareBorder>
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <ServiceTitleWrapper>React</ServiceTitleWrapper>
+                <p>A framework for creating highly interactive user interface designs in JavaScript that makes it painless to create reusable components that update efficiently based on the state of your application.</p>
             </GenericSquareBorder>
             <GenericSquareBorder>
-                <h4>UI/UX Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <ServiceTitleWrapper>Responsive Design</ServiceTitleWrapper>
+                <p>Responsive web design makes your web page look good on all devices. It is a set of techniques that enables your web site to adapt its layout to the size and orientation of the user's device screen.</p>
             </GenericSquareBorder>
             <GenericSquareBorder>
-                <h4>SEO & Marketing</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <ServiceTitleWrapper>Server Side</ServiceTitleWrapper>
+                <p>Extensive experience in PHP and Python including the Django framework. Dynamic server-side rendering allow you to tailor your website content on an individual user basis.</p>
             </GenericSquareBorder>
         </GenericListContainer>
     </GenericContainer>

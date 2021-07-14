@@ -24,7 +24,7 @@ const MyServices = () => (
             </GenericSquareBorder>
             <GenericSquareBorder>
                 <ServiceTitleWrapper>Server Side</ServiceTitleWrapper>
-                <p>Extensive experience in PHP and Python including the Django framework. Dynamic server-side rendering allow you to tailor your website content on an individual user basis.</p>
+                <p>Extensive experience in PHP and Python including the Django framework. Dynamic server-side rendering allows you to tailor your website content on an individual user basis.</p>
             </GenericSquareBorder>
         </GenericListContainer>
     </GenericContainer>

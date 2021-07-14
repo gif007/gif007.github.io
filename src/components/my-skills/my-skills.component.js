@@ -20,23 +20,26 @@ const MySkills = ({areSkillsVisible}) => (
         <GenericListContainer id='skills-section'>
             <SkillMeter
                 areSkillsVisible={areSkillsVisible}
-                text='HTML & CSS'
-                img={NinetyEight}
+                text='REACT/REDUX'
+                img={EightyFive}
             />
+
             <SkillMeter
                 areSkillsVisible={areSkillsVisible}
                 text='ES6'
                 img={NinetyOne}
             />
-            <SkillMeter
-                areSkillsVisible={areSkillsVisible}
-                text='REACT/REDUX'
-                img={EightyFive}
-            />
+            
             <SkillMeter
                 areSkillsVisible={areSkillsVisible}
                 text='SQL & NoSQL'
                 img={SeventySeven}
+            />
+
+            <SkillMeter
+                areSkillsVisible={areSkillsVisible}
+                text='HTML & CSS'
+                img={NinetyEight}
             />
         </GenericListContainer>
     </GenericContainer>

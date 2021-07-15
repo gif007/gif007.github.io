@@ -28,7 +28,7 @@ const CruiselineSliderDeals = () => {
             <SliderWrapper>
                 {
                     isMobile ? (
-                        <SingleSlider componentHeight={450} componentWidth={300}>
+                        <SingleSlider componentHeight={450}>
                             {
                                 components.map((component, index) => {
                                     return (

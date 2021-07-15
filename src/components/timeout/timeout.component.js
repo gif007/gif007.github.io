@@ -28,7 +28,7 @@ const Timeout = ({deltaInHours}) => {
         setTimeout(() => {
             setDelta(delta - 1000);
         }, 1000);
-    })
+    }, [delta]);
 
     return (
         <TimeoutWrapper>

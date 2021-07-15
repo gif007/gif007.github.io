@@ -3,14 +3,13 @@ import React, { useState } from 'react';
 import {
     SingleSliderContainer,
     Left,
-    ContentWrapper,
     Right,
     DotsContainer,
     Dot
 } from './single-slider.styles';
 
 
-const SingleSlider = ({children, componentWidth, componentHeight}) => {
+const SingleSlider = ({children, componentHeight}) => {
     
     const [index, setIndex] = useState(0);
 
@@ -30,25 +29,17 @@ const SingleSlider = ({children, componentWidth, componentHeight}) => {
         setIndex(index + 1);
     }
 
+    const handleOnClick = (n) => {
+        setIndex(n);
+    }
+
     return (
-    <SingleSliderContainer
-        componentWidth={componentWidth}
-        componentHeight={componentHeight}
-    >
+    <SingleSliderContainer componentHeight={componentHeight}>
         <Left onClick={goLeft}>&#9665;</Left>
-        <ContentWrapper
-            componentWidth={componentWidth}
-            componentHeight={componentHeight}
-        >
-            {children[index]}
-        </ContentWrapper>
+        {children[index]}
         <DotsContainer>
             {
                 children.map((child, i) => {
-                    const handleOnClick = (n) => {
-                        setIndex(n);
-                    }
-
                     if (index === i) {
                         return <Dot key={i} onClick={() => handleOnClick(i)}>&#9679;</Dot>
                     }

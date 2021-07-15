@@ -6,16 +6,10 @@ export const SingleSliderContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: ${props => `${props.componentWidth + 45}px`};
     height: ${props => `${props.componentHeight + 45}px`};
     background: 1px solid black;
     overflow: hidden;
     margin: 2rem;
-`;
-
-export const ContentWrapper = styled.div`
-    width: ${props => `${props.componentWidth}px`};
-    height: ${props => `${props.componentHeight}px`};
 `;
 
 const ButtonStyles = css`
@@ -34,7 +28,7 @@ const ButtonStyles = css`
     position: absolute;
 
     :hover {
-        opacity: 1;
+        opacity: .5;
     }
 `;
 

@@ -12,6 +12,7 @@ import Contact from '../components/contact/contact.component';
 
 import AntImageRight from '../images/index/ant-right-125x125.png';
 import AntImageLeft from '../images/index/ant-left-125x125.png';
+// import ESBackground from '../images/index/javascript-bg3.png';
 
 
 const IndexPage = () => {
@@ -37,10 +38,10 @@ const IndexPage = () => {
   return (
   <Layout>
     <Seo title="Home" />
-      <Section color='#f3f8fc' justify='flex-start' bg={{image: AntImageLeft, side: 'right'}}>
+      <Section color='#f3f8fc' justify='flex-start' image={{source: AntImageLeft, side: 'right'}}>
         <NameAndResume />
       </Section>
-      <Section justify='flex-end'  bg={{image: AntImageRight, side: 'left'}}>
+      <Section justify='flex-end'  image={{source: AntImageRight, side: 'left'}}>
         <AboutMe />
       </Section>
       <Section color='#f3f8fc'>

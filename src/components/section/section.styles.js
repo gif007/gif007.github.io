@@ -7,6 +7,9 @@ export const SectionWrapper = styled.section`
     ${props => props.padded ? `padding: 0 6rem`: null};
     display: flex;
     align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-image: ${props => props.bgImage ? `url(${props.bgImage})` : null };
 
 
     @media screen and (max-width: 800px) {

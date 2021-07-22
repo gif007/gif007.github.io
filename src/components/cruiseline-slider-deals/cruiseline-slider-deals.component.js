@@ -48,7 +48,7 @@ const CruiselineSliderDeals = () => {
                                 }
                                 )
                             }
-                </ThreeSlider>
+                        </ThreeSlider>
                     )
                 }
                 <ButtonWrapper>See More <ArrowWrapper>&#9655;</ArrowWrapper></ButtonWrapper>

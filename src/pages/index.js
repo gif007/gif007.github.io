@@ -32,7 +32,7 @@ const IndexPage = () => {
       }
     }
 
-      window.addEventListener('scroll', checkScrollDistance);
+    window.addEventListener('scroll', checkScrollDistance);
   }, [])
 
   return (

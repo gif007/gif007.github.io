@@ -11,9 +11,9 @@ import {
 } from './cruiseline-deal-card.styles';
 
 
-const DealCard = ({index, component}) => (
+const DealCard = ({component}) => (
     <DealCardWrapper>
-        <img key={index} src={component.image} alt='resort' />
+        <img src={component.image} alt='resort' />
         <DetailsWrapper>
             <DurationWrapper>{component.duration}</DurationWrapper>
             <TitleWrapper>{component.title}</TitleWrapper>

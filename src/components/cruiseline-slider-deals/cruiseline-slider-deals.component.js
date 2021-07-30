@@ -32,7 +32,7 @@ const CruiselineSliderDeals = () => {
                             {
                                 components.map((component, index) => {
                                     return (
-                                        <DealCard index={index} component={component} />
+                                        <DealCard key={index} component={component} />
                                     )
                                 }
                                 )
@@ -43,7 +43,7 @@ const CruiselineSliderDeals = () => {
                             {
                                 components.map((component, index) => {
                                     return (
-                                        <DealCard index={index} component={component} />
+                                        <DealCard key={index} component={component} />
                                     )
                                 }
                                 )

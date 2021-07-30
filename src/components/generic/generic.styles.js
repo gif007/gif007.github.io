@@ -40,7 +40,7 @@ export const GenericSquareBorder = styled.div`
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    box-shadow: 0 0 4px 1px rgba(0, 0, 255, .2);
+    box-shadow: 0 0 4px 1px rgb(0 0 0 / 15%);
     margin: 0 1rem;
     flex: 1;
     height: 200px;

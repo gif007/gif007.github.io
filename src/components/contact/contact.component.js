@@ -24,9 +24,9 @@ const Contact = () => (
             <AlignTopContainer>
                 <HeadingWrapper>Contact Info</HeadingWrapper>
                 <InfoList>
-                    <InfoListItem title={true} >Email</InfoListItem>
+                    <InfoListItem important={true} >Email</InfoListItem>
                     <InfoListItem>carruthers.n.t@gmail.com</InfoListItem>
-                    <InfoListItem title={true} >Socials</InfoListItem>
+                    <InfoListItem important={true} >Socials</InfoListItem>
                     <InfoListItem><Socials /></InfoListItem>
                 </InfoList>
             </AlignTopContainer>

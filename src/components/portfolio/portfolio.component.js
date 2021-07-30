@@ -21,13 +21,13 @@ const Portfolio = () => (
         <GenericHeadingWrapper>Portfolio</GenericHeadingWrapper>
         <PortfolioGrid>
 
-            <Link to='https://crwn-clothing-ns.herokuapp.com/'>
+            <a href='https://crwn-clothing-ns.herokuapp.com/'>
                 <MenuItemContainer>
                     <BackgroundImageContainer
                         style={{backgroundImage: `url(${CrwnClothing}`}}
                     />
                 </MenuItemContainer>
-            </Link>
+            </a>
 
             <Link to='/cruiseline-template/'>
                 <MenuItemContainer>

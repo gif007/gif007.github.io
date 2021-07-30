@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'gatsby';
+
 import {
     BurgerMenuContainer,
     Row
@@ -6,15 +8,17 @@ import {
 
 
 const BurgerMenu = ({fn, value}) => {
-    const fireFn = () => fn(!value);
+    const fireFn = () => {
+        fn(!value);
+    };
 
     return (
     <BurgerMenuContainer>
-        <Row><a onClick={fireFn} href='/#top'>HOME</a></Row>
-        <Row><a onClick={fireFn} href='/#about'>ABOUT</a></Row>
-        <Row><a onClick={fireFn} href='/#blog'>BLOG</a></Row>
-        <Row><a onClick={fireFn} href='/#portfolio'>PORTFOLIO</a></Row>
-        <Row><a onClick={fireFn} href='/#contact'>CONTACT</a></Row>
+        <Row><Link onClick={fireFn} to='/#top'>HOME</Link></Row>
+        <Row><Link onClick={fireFn} to='/#about'>ABOUT</Link></Row>
+        <Row><Link onClick={fireFn} to='/#blog'>BLOG</Link></Row>
+        <Row><Link onClick={fireFn} to='/#portfolio'>PORTFOLIO</Link></Row>
+        <Row><Link onClick={fireFn} to='/#contact'>CONTACT</Link></Row>
     </BurgerMenuContainer>
 )};
 

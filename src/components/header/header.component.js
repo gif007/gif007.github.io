@@ -14,8 +14,8 @@ const Header = () => {
     <HeaderWrapper>
         <a href='/' id='top'>
             <picture>
-                <source media="(max-width: 800px)" srcset={NameLogoSmall} />
-                <source media="(min-width: 801px)" srcset={NameLogoLarge} />
+                <source media="(max-width: 800px)" srcSet={NameLogoSmall} />
+                <source media="(min-width: 801px)" srcSet={NameLogoLarge} />
                 <img src={NameLogoLarge} alt='Neil Carruthers'/>
             </picture>
         </a>

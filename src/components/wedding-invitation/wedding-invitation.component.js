@@ -29,9 +29,9 @@ const WeddingInvitation = () => (
         </NavBar>
 
         <picture>
-                <source media="(max-width: 400px" srcset={WeddingPhotoSmall} />
-                <source media="(max-width: 800px)" srcset={WeddingPhotoMedium} />
-                <source media="(min-width: 801px)" srcset={WeddingPhotoLarge} />
+                <source media="(max-width: 400px" srcSet={WeddingPhotoSmall} />
+                <source media="(max-width: 800px)" srcSet={WeddingPhotoMedium} />
+                <source media="(min-width: 801px)" srcSet={WeddingPhotoLarge} />
                 <BorderRadiusedImage src={WeddingPhotoLarge} alt='' />
         </picture>
         

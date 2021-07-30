@@ -20,7 +20,7 @@ export const InfoList = styled.ul`
 `;
 
 const checkProps = props => {
-    if (props.title) {
+    if (props.important) {
         return css`
             color: red;
             font-weight: 700;

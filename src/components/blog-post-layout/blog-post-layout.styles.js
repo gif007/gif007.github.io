@@ -17,7 +17,7 @@ const PostWrapper = styled.div`
 
     figure {
         margin: 0;
-        padding: 0;
+        padding: 0.5rem 0;
 
         figcaption {
             margin-bottom: -12px;
@@ -36,6 +36,10 @@ const PostWrapper = styled.div`
 
     hr {
         margin-top: 36px;
+    }
+
+    @media screen and (max-width: 800px) {
+        padding: 2rem;
     }
 `;
 

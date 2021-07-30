@@ -13,7 +13,6 @@ export const HeaderWrapper = styled.header`
     background: #f3f8fc;
 
     @media screen and (max-width: 800px) {
-        background: white;
         position: unset;
         top: unset;
     }

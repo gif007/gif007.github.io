@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 
-export const SliderWrapper = styled.div`
+export const CarouselWrapper = styled.div`
     display: inline-flex;
     align-items: center;
 `;

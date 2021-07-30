@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
 import {
-    SliderWrapper,
+    CarouselWrapper,
     LeftButton,
     SlideShowContainer,
     Row,
     ContentWrapper,
     RightButton
-} from './three-slider.styles';
+} from './triple-carousel.styles';
 
 
-const ThreeSlider = ({gutter, componentWidth, componentHeight, children}) => {
+const TripleCarousel = ({gutter, componentWidth, componentHeight, children}) => {
     // Images must come in multiples of 3 for rightBoundary to work properly
     const gutterAndWidth = gutter + componentWidth;
     const leftBoundary = gutter;
@@ -34,7 +34,7 @@ const ThreeSlider = ({gutter, componentWidth, componentHeight, children}) => {
 
     
     return (
-            <SliderWrapper>
+            <CarouselWrapper>
                 <LeftButton
                     left={left}
                     boundary={leftBoundary}
@@ -74,8 +74,8 @@ const ThreeSlider = ({gutter, componentWidth, componentHeight, children}) => {
                 >
                     &#9655;
                 </RightButton>
-            </SliderWrapper>
+            </CarouselWrapper>
     )
 };
 
-export default ThreeSlider;
+export default TripleCarousel;

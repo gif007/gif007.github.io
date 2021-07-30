@@ -8,8 +8,8 @@ import {
     ArrowWrapper
 } from './cruiseline-slider-deals.styles';
 
-import ThreeSlider from '../three-slider/three-slider.component';
-import SingleSlider from '../single-slider/single-slider.component';
+import TripleCarousel from '../triple-carousel/triple-carousel.component';
+import SingleCarousel from '../single-carousel/single-carousel.component';
 import components from './deals';
 import DealCard from '../cruiseline-deal-card/cruiseline-deal-card.component';
 
@@ -28,7 +28,7 @@ const CruiselineSliderDeals = () => {
             <SliderWrapper>
                 {
                     isMobile ? (
-                        <SingleSlider componentHeight={450}>
+                        <SingleCarousel componentHeight={450}>
                             {
                                 components.map((component, index) => {
                                     return (
@@ -37,9 +37,9 @@ const CruiselineSliderDeals = () => {
                                 }
                                 )
                             }
-                        </SingleSlider>
+                        </SingleCarousel>
                     ) : (
-                        <ThreeSlider gutter={15} componentWidth={300} componentHeight={450}>
+                        <TripleCarousel gutter={15} componentWidth={300} componentHeight={450}>
                             {
                                 components.map((component, index) => {
                                     return (
@@ -48,7 +48,7 @@ const CruiselineSliderDeals = () => {
                                 }
                                 )
                             }
-                        </ThreeSlider>
+                        </TripleCarousel>
                     )
                 }
                 <ButtonWrapper>See More <ArrowWrapper>&#9655;</ArrowWrapper></ButtonWrapper>

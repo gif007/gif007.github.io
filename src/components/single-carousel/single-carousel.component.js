@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
 import {
-    SingleSliderContainer,
+    SingleCarouselContainer,
     Left,
     Right,
     DotsContainer,
     Dot
-} from './single-slider.styles';
+} from './single-carousel.styles';
 
 
-const SingleSlider = ({children, componentHeight}) => {
+const SingleCarousel = ({children, componentHeight}) => {
     
     const [index, setIndex] = useState(0);
 
@@ -34,7 +34,7 @@ const SingleSlider = ({children, componentHeight}) => {
     }
 
     return (
-    <SingleSliderContainer componentHeight={componentHeight}>
+    <SingleCarouselContainer componentHeight={componentHeight}>
         <Left onClick={goLeft}>&#9665;</Left>
         {children[index]}
         <DotsContainer>
@@ -48,7 +48,7 @@ const SingleSlider = ({children, componentHeight}) => {
             }
         </DotsContainer>
         <Right onClick={goRight}>&#9655;</Right>
-    </SingleSliderContainer>  
+    </SingleCarouselContainer>  
 )};
 
-export default SingleSlider;
+export default SingleCarousel;

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 
-export const SingleSliderContainer = styled.div`
+export const SingleCarouselContainer = styled.div`
     position: relative; 
     display: flex;
     align-items: center;

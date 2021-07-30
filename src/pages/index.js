@@ -5,6 +5,7 @@ import Seo from "../components/seo"
 import Section from '../components/section/section.component';
 import NameAndResume from "../components/name-and-resume/name-and-resume.component";
 import AboutMe from '../components/about-me/about-me.component';
+import BlogPosts from "../components/blog-posts/blog-posts.component";
 import MySkills from "../components/my-skills/my-skills.component";
 import MyServices from '../components/my-services/my-services.component';
 import Portfolio from '../components/portfolio/portfolio.component';
@@ -45,15 +46,18 @@ const IndexPage = () => {
         <AboutMe />
       </Section>
       <Section color='#f3f8fc'>
-        <MySkills areSkillsVisible={areSkillsVisible} />
+        <BlogPosts />
       </Section>
       <Section>
-        <MyServices />
+        <MySkills areSkillsVisible={areSkillsVisible} />
       </Section>
       <Section color='#f3f8fc'>
+        <MyServices />
+      </Section>
+      <Section>
         <Portfolio />
       </Section>
-      <Section padded>
+      <Section color='#f3f8fc' padded>
         <Contact />
       </Section>
   </Layout>

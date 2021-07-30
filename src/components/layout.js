@@ -8,7 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
-import Masthead from './header/header.component';
+import Header from './header/header.component';
 import "./reset.css" // global styles
 import styled from 'styled-components';
 
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Masthead />
+      <Header />
       <BodyContainer>
         <main>{children}</main>
         <FooterContainer>

@@ -26,7 +26,7 @@ const checkSide = (props) => {
     return css`right: 0`;
 }
 
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled.a`
     position: absolute;
     bottom: 0;
     width: 125px;

@@ -11,12 +11,15 @@ const Section = ({children, color, image, padded, bgImage}) => {
         >
             {children}
             {
-                image ? <ImageWrapper
-                        style={{
-                            backgroundImage: `url(${image.source})`,
-                        }}
-                        side={image.side}
-                    /> : null
+                image ? (
+                <ImageWrapper
+                    href={'/blog-post'}
+                    style={{
+                        backgroundImage: `url(${image.source})`,
+                    }}
+                    side={image.side}
+                />
+                 ) : null
             }
         </SectionWrapper>
     );

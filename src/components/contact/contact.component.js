@@ -1,4 +1,8 @@
 import React from 'react';
+
+import Highlight from 'react-highlight'
+import './stackoverflow-dark.css';
+
 import ContactForm from './contact-form.component';
 import Socials from '../socials/socials.component';
 
@@ -15,6 +19,15 @@ import {
     GenericListContainer
 } from '../generic/generic.styles';
 
+const codeText = `function (err, results) {
+    if (err) {
+        console.log(err);
+        return;
+    }
+    
+    // do something with results
+}`;
+
 
 const Contact = () => (
     <GenericContainer broad id='contact'>
@@ -28,6 +41,9 @@ const Contact = () => (
                     <InfoListItem title={true} >Socials</InfoListItem>
                     <InfoListItem><Socials /></InfoListItem>
                 </InfoList>
+                <Highlight className='javascript'>
+                    {codeText}
+                </Highlight>
             </AlignTopContainer>
 
             <AlignTopContainer>

@@ -7,7 +7,7 @@ import BurgerMenu from '../burger-menu/burger-menu.component';
 import NameLogoLarge from '../../images/index/logo-name-250w.png';
 import NameLogoSmall from '../../images/index/logo-name-125w.png';
 
-const Masthead = () => {
+const Header = () => {
     const [hidden, setHidden] = useState(true);
     
     return (
@@ -30,4 +30,4 @@ const Masthead = () => {
     </HeaderWrapper>
 )};
 
-export default Masthead;
+export default Header;

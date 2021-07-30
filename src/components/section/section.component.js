@@ -13,7 +13,6 @@ const Section = ({children, color, image, padded, bgImage}) => {
             {
                 image ? (
                 <ImageWrapper
-                    href={'/blog-post'}
                     style={{
                         backgroundImage: `url(${image.source})`,
                     }}

@@ -26,14 +26,6 @@ const PostWrapper = styled.div`
         }
     }
 
-    pre {
-        max-width: 70%;
-
-        @media screen and (max-width: 800px) {
-            max-width: unset;
-        }
-    }
-
     hr {
         margin-top: 36px;
     }

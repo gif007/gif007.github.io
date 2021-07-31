@@ -27,7 +27,7 @@ const goRight = () => {
 
     
 return (
-        <SliderWrapper>
+        <CarouselWrapper>
             <LeftButton
                 left={left}
                 boundary={leftBoundary}
@@ -67,7 +67,7 @@ return (
             >
                 &#9655;
             </RightButton>
-        </SliderWrapper>
+        </CarouselWrapper>
 )
 };`;
 
@@ -94,7 +94,7 @@ const handleOnClick = (n) => {
 }
 
 return (
-<SingleSliderContainer componentHeight={componentHeight}>
+<SingleCarouselContainer componentHeight={componentHeight}>
     <Left onClick={goLeft}>&#9665;</Left>
     {children[index]}
     <DotsContainer>
@@ -108,13 +108,13 @@ return (
         }
     </DotsContainer>
     <Right onClick={goRight}>&#9655;</Right>
-</SingleSliderContainer>  
+</SingleCarouselContainer>  
 )};`;
 
 const BlogPost = () => (
     <BlogPostLayout title='Proxying'>
         <h1>Variations on a Carousel</h1>
-        <p>While working on a proposal for a travel agency website I decided that I wanted to come up with a couple of different designs for a carousel components which would display predetermined sets of cards containing images and information about special offers.</p>
+        <p>While working on a proposal for a travel agency website I decided that I wanted to come up with a couple of different designs for a carousel component.</p>
         
         <p>I originally knew that I wanted a style that could show three cards at a time with the ability to move one card in either direction without looping around:</p>
 
@@ -125,9 +125,9 @@ const BlogPost = () => (
             </Highlight>
         </figure>
         
-        <p>When I considered its responsivity in regards to mobile designs I was discouraged by the thought of simply scaling it down, and decided instead to create a whole new alternative for displaying only one card.</p>
+        <p>When I considered its responsivity in regards to mobile designs I was discouraged by the thought of simply scaling it down, and decided instead to create an alternative for displaying a single card.</p>
 
-        <p>The simple-card design would be able to loop infinitely in either direction while tracking its position in the array of cards by way of a set of dots which also served as hot links:</p>
+        <p>The single-card design would be able to loop infinitely in either direction while tracking its position in the array of cards by way of a set of dots which also served as hot links:</p>
 
         <figure>
             <figcaption>single-carousel.component.js</figcaption>

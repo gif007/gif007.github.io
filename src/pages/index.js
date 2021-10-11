@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Section from '../components/section/section.component';
-// import NameAndResume from "../components/name-and-resume/name-and-resume.component";
+import NameAndResume from "../components/name-and-resume/name-and-resume.component";
 import AboutMe from '../components/about-me/about-me.component';
 import BlogPosts from "../components/blog-posts/blog-posts.component";
 import MySkills from "../components/my-skills/my-skills.component";
@@ -40,7 +40,7 @@ const IndexPage = () => {
   <Layout>
     <Seo title="Home" />
       <Section color='#f3f8fc' justify='flex-start' image={{source: AntImageLeft, side: 'right'}}>
-        {/* <NameAndResume /> */}
+        <NameAndResume />
       </Section>
       <Section justify='flex-end'  image={{source: AntImageRight, side: 'left'}}>
         <AboutMe />
@@ -54,10 +54,10 @@ const IndexPage = () => {
       <Section color='#f3f8fc'>
         <MyServices />
       </Section>
-      <Section>
-        {/* <Portfolio /> */}
-      </Section>
-      <Section color='#f3f8fc' padded>
+      {/* <Section>
+        <Portfolio />
+      </Section> */}
+      <Section padded>
         <Contact />
       </Section>
   </Layout>

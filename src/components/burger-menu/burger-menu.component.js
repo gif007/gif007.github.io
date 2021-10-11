@@ -17,7 +17,7 @@ const BurgerMenu = ({fn, value}) => {
         <Row><Link onClick={fireFn} to='/#top'>HOME</Link></Row>
         <Row><Link onClick={fireFn} to='/#about'>ABOUT</Link></Row>
         <Row><Link onClick={fireFn} to='/#blog'>BLOG</Link></Row>
-        <Row><Link onClick={fireFn} to='/#portfolio'>PORTFOLIO</Link></Row>
+        {/* <Row><Link onClick={fireFn} to='/#portfolio'>PORTFOLIO</Link></Row> */}
         <Row><Link onClick={fireFn} to='/#contact'>CONTACT</Link></Row>
     </BurgerMenuContainer>
 )};
